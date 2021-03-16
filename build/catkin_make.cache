@@ -1,2 +1,2 @@
-sena/sena_controller
+sena/sena_controller:sena/sena_msgs
 -DCATKIN_DEVEL_PREFIX=/home/rizky/sena_ws/devel -DCMAKE_INSTALL_PREFIX=/home/rizky/sena_ws/install -G Unix Makefiles

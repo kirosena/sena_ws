@@ -1,0 +1,2 @@
+set(sena_common_MESSAGE_FILES "/home/rizky/sena_ws/src/sena/sena_common/msg/Angle.msg;/home/rizky/sena_ws/src/sena/sena_common/msg/MotorInfo.msg;/home/rizky/sena_ws/src/sena/sena_common/msg/BallInfo.msg;/home/rizky/sena_ws/src/sena/sena_common/msg/OdomInfo.msg;/home/rizky/sena_ws/src/sena/sena_common/msg/PPoint.msg;/home/rizky/sena_ws/src/sena/sena_common/msg/VelCmd.msg;/home/rizky/sena_ws/src/sena/sena_common/msg/OmniVisionInfo.msg;/home/rizky/sena_ws/src/sena/sena_common/msg/FrontBallInfo.msg")
+set(sena_common_SERVICE_FILES "")

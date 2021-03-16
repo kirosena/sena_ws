@@ -1,0 +1,8 @@
+prefix=/home/rizky/sena_ws/install
+
+Name: sena_common
+Description: Description of sena_common
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lsena_common
+Requires: roscpp rospy std_msgs message_runtime

@@ -479,6 +479,370 @@ rosgraph_msgs_generate_messages_py/fast:
 	$(MAKE) -f sena/sena_controller/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make sena/sena_controller/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
 .PHONY : rosgraph_msgs_generate_messages_py/fast
 
+#=============================================================================
+# Target rules for targets named _sena_msgs_generate_messages_check_deps_Angle
+
+# Build rule for target.
+_sena_msgs_generate_messages_check_deps_Angle: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _sena_msgs_generate_messages_check_deps_Angle
+.PHONY : _sena_msgs_generate_messages_check_deps_Angle
+
+# fast build rule for target.
+_sena_msgs_generate_messages_check_deps_Angle/fast:
+	$(MAKE) -f sena/sena_msgs/CMakeFiles/_sena_msgs_generate_messages_check_deps_Angle.dir/build.make sena/sena_msgs/CMakeFiles/_sena_msgs_generate_messages_check_deps_Angle.dir/build
+.PHONY : _sena_msgs_generate_messages_check_deps_Angle/fast
+
+#=============================================================================
+# Target rules for targets named sena_msgs_generate_messages_cpp
+
+# Build rule for target.
+sena_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sena_msgs_generate_messages_cpp
+.PHONY : sena_msgs_generate_messages_cpp
+
+# fast build rule for target.
+sena_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_cpp.dir/build.make sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_cpp.dir/build
+.PHONY : sena_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named _sena_msgs_generate_messages_check_deps_BallInfo
+
+# Build rule for target.
+_sena_msgs_generate_messages_check_deps_BallInfo: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _sena_msgs_generate_messages_check_deps_BallInfo
+.PHONY : _sena_msgs_generate_messages_check_deps_BallInfo
+
+# fast build rule for target.
+_sena_msgs_generate_messages_check_deps_BallInfo/fast:
+	$(MAKE) -f sena/sena_msgs/CMakeFiles/_sena_msgs_generate_messages_check_deps_BallInfo.dir/build.make sena/sena_msgs/CMakeFiles/_sena_msgs_generate_messages_check_deps_BallInfo.dir/build
+.PHONY : _sena_msgs_generate_messages_check_deps_BallInfo/fast
+
+#=============================================================================
+# Target rules for targets named std_srvs_generate_messages_lisp
+
+# Build rule for target.
+std_srvs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_lisp
+.PHONY : std_srvs_generate_messages_lisp
+
+# fast build rule for target.
+std_srvs_generate_messages_lisp/fast:
+	$(MAKE) -f sena/sena_msgs/CMakeFiles/std_srvs_generate_messages_lisp.dir/build.make sena/sena_msgs/CMakeFiles/std_srvs_generate_messages_lisp.dir/build
+.PHONY : std_srvs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named std_srvs_generate_messages_eus
+
+# Build rule for target.
+std_srvs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_eus
+.PHONY : std_srvs_generate_messages_eus
+
+# fast build rule for target.
+std_srvs_generate_messages_eus/fast:
+	$(MAKE) -f sena/sena_msgs/CMakeFiles/std_srvs_generate_messages_eus.dir/build.make sena/sena_msgs/CMakeFiles/std_srvs_generate_messages_eus.dir/build
+.PHONY : std_srvs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named _sena_msgs_generate_messages_check_deps_VelCmd
+
+# Build rule for target.
+_sena_msgs_generate_messages_check_deps_VelCmd: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _sena_msgs_generate_messages_check_deps_VelCmd
+.PHONY : _sena_msgs_generate_messages_check_deps_VelCmd
+
+# fast build rule for target.
+_sena_msgs_generate_messages_check_deps_VelCmd/fast:
+	$(MAKE) -f sena/sena_msgs/CMakeFiles/_sena_msgs_generate_messages_check_deps_VelCmd.dir/build.make sena/sena_msgs/CMakeFiles/_sena_msgs_generate_messages_check_deps_VelCmd.dir/build
+.PHONY : _sena_msgs_generate_messages_check_deps_VelCmd/fast
+
+#=============================================================================
+# Target rules for targets named sena_msgs_geneus
+
+# Build rule for target.
+sena_msgs_geneus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sena_msgs_geneus
+.PHONY : sena_msgs_geneus
+
+# fast build rule for target.
+sena_msgs_geneus/fast:
+	$(MAKE) -f sena/sena_msgs/CMakeFiles/sena_msgs_geneus.dir/build.make sena/sena_msgs/CMakeFiles/sena_msgs_geneus.dir/build
+.PHONY : sena_msgs_geneus/fast
+
+#=============================================================================
+# Target rules for targets named geometry_msgs_generate_messages_nodejs
+
+# Build rule for target.
+geometry_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_nodejs
+.PHONY : geometry_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+geometry_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f sena/sena_msgs/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make sena/sena_msgs/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
+.PHONY : geometry_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named geometry_msgs_generate_messages_cpp
+
+# Build rule for target.
+geometry_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_cpp
+.PHONY : geometry_msgs_generate_messages_cpp
+
+# fast build rule for target.
+geometry_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f sena/sena_msgs/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make sena/sena_msgs/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
+.PHONY : geometry_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named geometry_msgs_generate_messages_lisp
+
+# Build rule for target.
+geometry_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_lisp
+.PHONY : geometry_msgs_generate_messages_lisp
+
+# fast build rule for target.
+geometry_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f sena/sena_msgs/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make sena/sena_msgs/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
+.PHONY : geometry_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named sena_msgs_generate_messages
+
+# Build rule for target.
+sena_msgs_generate_messages: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sena_msgs_generate_messages
+.PHONY : sena_msgs_generate_messages
+
+# fast build rule for target.
+sena_msgs_generate_messages/fast:
+	$(MAKE) -f sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages.dir/build.make sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages.dir/build
+.PHONY : sena_msgs_generate_messages/fast
+
+#=============================================================================
+# Target rules for targets named sena_msgs_generate_messages_lisp
+
+# Build rule for target.
+sena_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sena_msgs_generate_messages_lisp
+.PHONY : sena_msgs_generate_messages_lisp
+
+# fast build rule for target.
+sena_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_lisp.dir/build.make sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_lisp.dir/build
+.PHONY : sena_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named geometry_msgs_generate_messages_eus
+
+# Build rule for target.
+geometry_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_eus
+.PHONY : geometry_msgs_generate_messages_eus
+
+# fast build rule for target.
+geometry_msgs_generate_messages_eus/fast:
+	$(MAKE) -f sena/sena_msgs/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make sena/sena_msgs/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
+.PHONY : geometry_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named std_srvs_generate_messages_nodejs
+
+# Build rule for target.
+std_srvs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_nodejs
+.PHONY : std_srvs_generate_messages_nodejs
+
+# fast build rule for target.
+std_srvs_generate_messages_nodejs/fast:
+	$(MAKE) -f sena/sena_msgs/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build.make sena/sena_msgs/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build
+.PHONY : std_srvs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named _sena_msgs_generate_messages_check_deps_OmniVisionInfo
+
+# Build rule for target.
+_sena_msgs_generate_messages_check_deps_OmniVisionInfo: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _sena_msgs_generate_messages_check_deps_OmniVisionInfo
+.PHONY : _sena_msgs_generate_messages_check_deps_OmniVisionInfo
+
+# fast build rule for target.
+_sena_msgs_generate_messages_check_deps_OmniVisionInfo/fast:
+	$(MAKE) -f sena/sena_msgs/CMakeFiles/_sena_msgs_generate_messages_check_deps_OmniVisionInfo.dir/build.make sena/sena_msgs/CMakeFiles/_sena_msgs_generate_messages_check_deps_OmniVisionInfo.dir/build
+.PHONY : _sena_msgs_generate_messages_check_deps_OmniVisionInfo/fast
+
+#=============================================================================
+# Target rules for targets named sena_msgs_gencpp
+
+# Build rule for target.
+sena_msgs_gencpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sena_msgs_gencpp
+.PHONY : sena_msgs_gencpp
+
+# fast build rule for target.
+sena_msgs_gencpp/fast:
+	$(MAKE) -f sena/sena_msgs/CMakeFiles/sena_msgs_gencpp.dir/build.make sena/sena_msgs/CMakeFiles/sena_msgs_gencpp.dir/build
+.PHONY : sena_msgs_gencpp/fast
+
+#=============================================================================
+# Target rules for targets named sena_msgs_generate_messages_nodejs
+
+# Build rule for target.
+sena_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sena_msgs_generate_messages_nodejs
+.PHONY : sena_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+sena_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_nodejs.dir/build.make sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_nodejs.dir/build
+.PHONY : sena_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named _sena_msgs_generate_messages_check_deps_MotorInfo
+
+# Build rule for target.
+_sena_msgs_generate_messages_check_deps_MotorInfo: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _sena_msgs_generate_messages_check_deps_MotorInfo
+.PHONY : _sena_msgs_generate_messages_check_deps_MotorInfo
+
+# fast build rule for target.
+_sena_msgs_generate_messages_check_deps_MotorInfo/fast:
+	$(MAKE) -f sena/sena_msgs/CMakeFiles/_sena_msgs_generate_messages_check_deps_MotorInfo.dir/build.make sena/sena_msgs/CMakeFiles/_sena_msgs_generate_messages_check_deps_MotorInfo.dir/build
+.PHONY : _sena_msgs_generate_messages_check_deps_MotorInfo/fast
+
+#=============================================================================
+# Target rules for targets named sena_msgs_generate_messages_eus
+
+# Build rule for target.
+sena_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sena_msgs_generate_messages_eus
+.PHONY : sena_msgs_generate_messages_eus
+
+# fast build rule for target.
+sena_msgs_generate_messages_eus/fast:
+	$(MAKE) -f sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_eus.dir/build.make sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_eus.dir/build
+.PHONY : sena_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named std_srvs_generate_messages_cpp
+
+# Build rule for target.
+std_srvs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_cpp
+.PHONY : std_srvs_generate_messages_cpp
+
+# fast build rule for target.
+std_srvs_generate_messages_cpp/fast:
+	$(MAKE) -f sena/sena_msgs/CMakeFiles/std_srvs_generate_messages_cpp.dir/build.make sena/sena_msgs/CMakeFiles/std_srvs_generate_messages_cpp.dir/build
+.PHONY : std_srvs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named _sena_msgs_generate_messages_check_deps_OdomInfo
+
+# Build rule for target.
+_sena_msgs_generate_messages_check_deps_OdomInfo: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _sena_msgs_generate_messages_check_deps_OdomInfo
+.PHONY : _sena_msgs_generate_messages_check_deps_OdomInfo
+
+# fast build rule for target.
+_sena_msgs_generate_messages_check_deps_OdomInfo/fast:
+	$(MAKE) -f sena/sena_msgs/CMakeFiles/_sena_msgs_generate_messages_check_deps_OdomInfo.dir/build.make sena/sena_msgs/CMakeFiles/_sena_msgs_generate_messages_check_deps_OdomInfo.dir/build
+.PHONY : _sena_msgs_generate_messages_check_deps_OdomInfo/fast
+
+#=============================================================================
+# Target rules for targets named sena_msgs_genlisp
+
+# Build rule for target.
+sena_msgs_genlisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sena_msgs_genlisp
+.PHONY : sena_msgs_genlisp
+
+# fast build rule for target.
+sena_msgs_genlisp/fast:
+	$(MAKE) -f sena/sena_msgs/CMakeFiles/sena_msgs_genlisp.dir/build.make sena/sena_msgs/CMakeFiles/sena_msgs_genlisp.dir/build
+.PHONY : sena_msgs_genlisp/fast
+
+#=============================================================================
+# Target rules for targets named geometry_msgs_generate_messages_py
+
+# Build rule for target.
+geometry_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_py
+.PHONY : geometry_msgs_generate_messages_py
+
+# fast build rule for target.
+geometry_msgs_generate_messages_py/fast:
+	$(MAKE) -f sena/sena_msgs/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make sena/sena_msgs/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
+.PHONY : geometry_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named sena_msgs_gennodejs
+
+# Build rule for target.
+sena_msgs_gennodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sena_msgs_gennodejs
+.PHONY : sena_msgs_gennodejs
+
+# fast build rule for target.
+sena_msgs_gennodejs/fast:
+	$(MAKE) -f sena/sena_msgs/CMakeFiles/sena_msgs_gennodejs.dir/build.make sena/sena_msgs/CMakeFiles/sena_msgs_gennodejs.dir/build
+.PHONY : sena_msgs_gennodejs/fast
+
+#=============================================================================
+# Target rules for targets named sena_msgs_generate_messages_py
+
+# Build rule for target.
+sena_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sena_msgs_generate_messages_py
+.PHONY : sena_msgs_generate_messages_py
+
+# fast build rule for target.
+sena_msgs_generate_messages_py/fast:
+	$(MAKE) -f sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_py.dir/build.make sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_py.dir/build
+.PHONY : sena_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named _sena_msgs_generate_messages_check_deps_PPoint
+
+# Build rule for target.
+_sena_msgs_generate_messages_check_deps_PPoint: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _sena_msgs_generate_messages_check_deps_PPoint
+.PHONY : _sena_msgs_generate_messages_check_deps_PPoint
+
+# fast build rule for target.
+_sena_msgs_generate_messages_check_deps_PPoint/fast:
+	$(MAKE) -f sena/sena_msgs/CMakeFiles/_sena_msgs_generate_messages_check_deps_PPoint.dir/build.make sena/sena_msgs/CMakeFiles/_sena_msgs_generate_messages_check_deps_PPoint.dir/build
+.PHONY : _sena_msgs_generate_messages_check_deps_PPoint/fast
+
+#=============================================================================
+# Target rules for targets named sena_msgs_genpy
+
+# Build rule for target.
+sena_msgs_genpy: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sena_msgs_genpy
+.PHONY : sena_msgs_genpy
+
+# fast build rule for target.
+sena_msgs_genpy/fast:
+	$(MAKE) -f sena/sena_msgs/CMakeFiles/sena_msgs_genpy.dir/build.make sena/sena_msgs/CMakeFiles/sena_msgs_genpy.dir/build
+.PHONY : sena_msgs_genpy/fast
+
+#=============================================================================
+# Target rules for targets named std_srvs_generate_messages_py
+
+# Build rule for target.
+std_srvs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_py
+.PHONY : std_srvs_generate_messages_py
+
+# fast build rule for target.
+std_srvs_generate_messages_py/fast:
+	$(MAKE) -f sena/sena_msgs/CMakeFiles/std_srvs_generate_messages_py.dir/build.make sena/sena_msgs/CMakeFiles/std_srvs_generate_messages_py.dir/build
+.PHONY : std_srvs_generate_messages_py/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -516,6 +880,34 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_py"
+	@echo "... _sena_msgs_generate_messages_check_deps_Angle"
+	@echo "... sena_msgs_generate_messages_cpp"
+	@echo "... _sena_msgs_generate_messages_check_deps_BallInfo"
+	@echo "... std_srvs_generate_messages_lisp"
+	@echo "... std_srvs_generate_messages_eus"
+	@echo "... _sena_msgs_generate_messages_check_deps_VelCmd"
+	@echo "... sena_msgs_geneus"
+	@echo "... geometry_msgs_generate_messages_nodejs"
+	@echo "... geometry_msgs_generate_messages_cpp"
+	@echo "... geometry_msgs_generate_messages_lisp"
+	@echo "... sena_msgs_generate_messages"
+	@echo "... sena_msgs_generate_messages_lisp"
+	@echo "... geometry_msgs_generate_messages_eus"
+	@echo "... std_srvs_generate_messages_nodejs"
+	@echo "... _sena_msgs_generate_messages_check_deps_OmniVisionInfo"
+	@echo "... sena_msgs_gencpp"
+	@echo "... sena_msgs_generate_messages_nodejs"
+	@echo "... _sena_msgs_generate_messages_check_deps_MotorInfo"
+	@echo "... sena_msgs_generate_messages_eus"
+	@echo "... std_srvs_generate_messages_cpp"
+	@echo "... _sena_msgs_generate_messages_check_deps_OdomInfo"
+	@echo "... sena_msgs_genlisp"
+	@echo "... geometry_msgs_generate_messages_py"
+	@echo "... sena_msgs_gennodejs"
+	@echo "... sena_msgs_generate_messages_py"
+	@echo "... _sena_msgs_generate_messages_check_deps_PPoint"
+	@echo "... sena_msgs_genpy"
+	@echo "... std_srvs_generate_messages_py"
 .PHONY : help
 
 

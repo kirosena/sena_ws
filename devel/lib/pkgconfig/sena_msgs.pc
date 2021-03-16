@@ -1,0 +1,8 @@
+prefix=/home/rizky/sena_ws/devel
+
+Name: sena_msgs
+Description: Description of sena_msgs
+Version: 0.0.0
+Cflags: -I/home/rizky/sena_ws/devel/include -I/home/rizky/sena_ws/src/sena/sena_msgs/include
+Libs: -L${prefix}/lib 
+Requires: geometry_msgs roscpp rospy std_msgs std_srvs
