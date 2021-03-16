@@ -6,6 +6,8 @@ file(REMOVE_RECURSE
   "/home/rizky/sena_ws/devel/share/gennodejs/ros/sena_msgs/msg/OmniVisionInfo.js"
   "/home/rizky/sena_ws/devel/share/gennodejs/ros/sena_msgs/msg/PPoint.js"
   "/home/rizky/sena_ws/devel/share/gennodejs/ros/sena_msgs/msg/VelCmd.js"
+  "/home/rizky/sena_ws/devel/share/gennodejs/ros/sena_msgs/srv/BallHandle.js"
+  "/home/rizky/sena_ws/devel/share/gennodejs/ros/sena_msgs/srv/Shoot.js"
   "CMakeFiles/sena_msgs_generate_messages_nodejs"
 )
 

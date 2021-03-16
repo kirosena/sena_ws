@@ -112,6 +112,17 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -123,17 +134,6 @@ install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
-
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -181,6 +181,21 @@ _sena_msgs_generate_messages_check_deps_Angle: sena/sena_msgs/CMakeFiles/_sena_m
 _sena_msgs_generate_messages_check_deps_Angle/fast:
 	cd /home/rizky/sena_ws/build && $(MAKE) -f sena/sena_msgs/CMakeFiles/_sena_msgs_generate_messages_check_deps_Angle.dir/build.make sena/sena_msgs/CMakeFiles/_sena_msgs_generate_messages_check_deps_Angle.dir/build
 .PHONY : _sena_msgs_generate_messages_check_deps_Angle/fast
+
+# Convenience name for target.
+sena/sena_msgs/CMakeFiles/std_srvs_generate_messages_py.dir/rule:
+	cd /home/rizky/sena_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sena/sena_msgs/CMakeFiles/std_srvs_generate_messages_py.dir/rule
+.PHONY : sena/sena_msgs/CMakeFiles/std_srvs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+std_srvs_generate_messages_py: sena/sena_msgs/CMakeFiles/std_srvs_generate_messages_py.dir/rule
+
+.PHONY : std_srvs_generate_messages_py
+
+# fast build rule for target.
+std_srvs_generate_messages_py/fast:
+	cd /home/rizky/sena_ws/build && $(MAKE) -f sena/sena_msgs/CMakeFiles/std_srvs_generate_messages_py.dir/build.make sena/sena_msgs/CMakeFiles/std_srvs_generate_messages_py.dir/build
+.PHONY : std_srvs_generate_messages_py/fast
 
 # Convenience name for target.
 sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_cpp.dir/rule:
@@ -316,6 +331,21 @@ geometry_msgs_generate_messages_lisp: sena/sena_msgs/CMakeFiles/geometry_msgs_ge
 geometry_msgs_generate_messages_lisp/fast:
 	cd /home/rizky/sena_ws/build && $(MAKE) -f sena/sena_msgs/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make sena/sena_msgs/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
 .PHONY : geometry_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+sena/sena_msgs/CMakeFiles/_sena_msgs_generate_messages_check_deps_BallHandle.dir/rule:
+	cd /home/rizky/sena_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sena/sena_msgs/CMakeFiles/_sena_msgs_generate_messages_check_deps_BallHandle.dir/rule
+.PHONY : sena/sena_msgs/CMakeFiles/_sena_msgs_generate_messages_check_deps_BallHandle.dir/rule
+
+# Convenience name for target.
+_sena_msgs_generate_messages_check_deps_BallHandle: sena/sena_msgs/CMakeFiles/_sena_msgs_generate_messages_check_deps_BallHandle.dir/rule
+
+.PHONY : _sena_msgs_generate_messages_check_deps_BallHandle
+
+# fast build rule for target.
+_sena_msgs_generate_messages_check_deps_BallHandle/fast:
+	cd /home/rizky/sena_ws/build && $(MAKE) -f sena/sena_msgs/CMakeFiles/_sena_msgs_generate_messages_check_deps_BallHandle.dir/build.make sena/sena_msgs/CMakeFiles/_sena_msgs_generate_messages_check_deps_BallHandle.dir/build
+.PHONY : _sena_msgs_generate_messages_check_deps_BallHandle/fast
 
 # Convenience name for target.
 sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages.dir/rule:
@@ -483,64 +513,19 @@ _sena_msgs_generate_messages_check_deps_OdomInfo/fast:
 .PHONY : _sena_msgs_generate_messages_check_deps_OdomInfo/fast
 
 # Convenience name for target.
-sena/sena_msgs/CMakeFiles/sena_msgs_genlisp.dir/rule:
-	cd /home/rizky/sena_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sena/sena_msgs/CMakeFiles/sena_msgs_genlisp.dir/rule
-.PHONY : sena/sena_msgs/CMakeFiles/sena_msgs_genlisp.dir/rule
+sena/sena_msgs/CMakeFiles/sena_msgs_genpy.dir/rule:
+	cd /home/rizky/sena_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sena/sena_msgs/CMakeFiles/sena_msgs_genpy.dir/rule
+.PHONY : sena/sena_msgs/CMakeFiles/sena_msgs_genpy.dir/rule
 
 # Convenience name for target.
-sena_msgs_genlisp: sena/sena_msgs/CMakeFiles/sena_msgs_genlisp.dir/rule
+sena_msgs_genpy: sena/sena_msgs/CMakeFiles/sena_msgs_genpy.dir/rule
 
-.PHONY : sena_msgs_genlisp
+.PHONY : sena_msgs_genpy
 
 # fast build rule for target.
-sena_msgs_genlisp/fast:
-	cd /home/rizky/sena_ws/build && $(MAKE) -f sena/sena_msgs/CMakeFiles/sena_msgs_genlisp.dir/build.make sena/sena_msgs/CMakeFiles/sena_msgs_genlisp.dir/build
-.PHONY : sena_msgs_genlisp/fast
-
-# Convenience name for target.
-sena/sena_msgs/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule:
-	cd /home/rizky/sena_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sena/sena_msgs/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
-.PHONY : sena/sena_msgs/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_py: sena/sena_msgs/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
-
-.PHONY : geometry_msgs_generate_messages_py
-
-# fast build rule for target.
-geometry_msgs_generate_messages_py/fast:
-	cd /home/rizky/sena_ws/build && $(MAKE) -f sena/sena_msgs/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make sena/sena_msgs/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
-.PHONY : geometry_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-sena/sena_msgs/CMakeFiles/sena_msgs_gennodejs.dir/rule:
-	cd /home/rizky/sena_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sena/sena_msgs/CMakeFiles/sena_msgs_gennodejs.dir/rule
-.PHONY : sena/sena_msgs/CMakeFiles/sena_msgs_gennodejs.dir/rule
-
-# Convenience name for target.
-sena_msgs_gennodejs: sena/sena_msgs/CMakeFiles/sena_msgs_gennodejs.dir/rule
-
-.PHONY : sena_msgs_gennodejs
-
-# fast build rule for target.
-sena_msgs_gennodejs/fast:
-	cd /home/rizky/sena_ws/build && $(MAKE) -f sena/sena_msgs/CMakeFiles/sena_msgs_gennodejs.dir/build.make sena/sena_msgs/CMakeFiles/sena_msgs_gennodejs.dir/build
-.PHONY : sena_msgs_gennodejs/fast
-
-# Convenience name for target.
-sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_py.dir/rule:
-	cd /home/rizky/sena_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_py.dir/rule
-.PHONY : sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-sena_msgs_generate_messages_py: sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_py.dir/rule
-
-.PHONY : sena_msgs_generate_messages_py
-
-# fast build rule for target.
-sena_msgs_generate_messages_py/fast:
-	cd /home/rizky/sena_ws/build && $(MAKE) -f sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_py.dir/build.make sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_py.dir/build
-.PHONY : sena_msgs_generate_messages_py/fast
+sena_msgs_genpy/fast:
+	cd /home/rizky/sena_ws/build && $(MAKE) -f sena/sena_msgs/CMakeFiles/sena_msgs_genpy.dir/build.make sena/sena_msgs/CMakeFiles/sena_msgs_genpy.dir/build
+.PHONY : sena_msgs_genpy/fast
 
 # Convenience name for target.
 sena/sena_msgs/CMakeFiles/_sena_msgs_generate_messages_check_deps_PPoint.dir/rule:
@@ -558,34 +543,79 @@ _sena_msgs_generate_messages_check_deps_PPoint/fast:
 .PHONY : _sena_msgs_generate_messages_check_deps_PPoint/fast
 
 # Convenience name for target.
-sena/sena_msgs/CMakeFiles/sena_msgs_genpy.dir/rule:
-	cd /home/rizky/sena_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sena/sena_msgs/CMakeFiles/sena_msgs_genpy.dir/rule
-.PHONY : sena/sena_msgs/CMakeFiles/sena_msgs_genpy.dir/rule
+sena/sena_msgs/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule:
+	cd /home/rizky/sena_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sena/sena_msgs/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+.PHONY : sena/sena_msgs/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
-sena_msgs_genpy: sena/sena_msgs/CMakeFiles/sena_msgs_genpy.dir/rule
+geometry_msgs_generate_messages_py: sena/sena_msgs/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
 
-.PHONY : sena_msgs_genpy
+.PHONY : geometry_msgs_generate_messages_py
 
 # fast build rule for target.
-sena_msgs_genpy/fast:
-	cd /home/rizky/sena_ws/build && $(MAKE) -f sena/sena_msgs/CMakeFiles/sena_msgs_genpy.dir/build.make sena/sena_msgs/CMakeFiles/sena_msgs_genpy.dir/build
-.PHONY : sena_msgs_genpy/fast
+geometry_msgs_generate_messages_py/fast:
+	cd /home/rizky/sena_ws/build && $(MAKE) -f sena/sena_msgs/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make sena/sena_msgs/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
+.PHONY : geometry_msgs_generate_messages_py/fast
 
 # Convenience name for target.
-sena/sena_msgs/CMakeFiles/std_srvs_generate_messages_py.dir/rule:
-	cd /home/rizky/sena_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sena/sena_msgs/CMakeFiles/std_srvs_generate_messages_py.dir/rule
-.PHONY : sena/sena_msgs/CMakeFiles/std_srvs_generate_messages_py.dir/rule
+sena/sena_msgs/CMakeFiles/_sena_msgs_generate_messages_check_deps_Shoot.dir/rule:
+	cd /home/rizky/sena_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sena/sena_msgs/CMakeFiles/_sena_msgs_generate_messages_check_deps_Shoot.dir/rule
+.PHONY : sena/sena_msgs/CMakeFiles/_sena_msgs_generate_messages_check_deps_Shoot.dir/rule
 
 # Convenience name for target.
-std_srvs_generate_messages_py: sena/sena_msgs/CMakeFiles/std_srvs_generate_messages_py.dir/rule
+_sena_msgs_generate_messages_check_deps_Shoot: sena/sena_msgs/CMakeFiles/_sena_msgs_generate_messages_check_deps_Shoot.dir/rule
 
-.PHONY : std_srvs_generate_messages_py
+.PHONY : _sena_msgs_generate_messages_check_deps_Shoot
 
 # fast build rule for target.
-std_srvs_generate_messages_py/fast:
-	cd /home/rizky/sena_ws/build && $(MAKE) -f sena/sena_msgs/CMakeFiles/std_srvs_generate_messages_py.dir/build.make sena/sena_msgs/CMakeFiles/std_srvs_generate_messages_py.dir/build
-.PHONY : std_srvs_generate_messages_py/fast
+_sena_msgs_generate_messages_check_deps_Shoot/fast:
+	cd /home/rizky/sena_ws/build && $(MAKE) -f sena/sena_msgs/CMakeFiles/_sena_msgs_generate_messages_check_deps_Shoot.dir/build.make sena/sena_msgs/CMakeFiles/_sena_msgs_generate_messages_check_deps_Shoot.dir/build
+.PHONY : _sena_msgs_generate_messages_check_deps_Shoot/fast
+
+# Convenience name for target.
+sena/sena_msgs/CMakeFiles/sena_msgs_gennodejs.dir/rule:
+	cd /home/rizky/sena_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sena/sena_msgs/CMakeFiles/sena_msgs_gennodejs.dir/rule
+.PHONY : sena/sena_msgs/CMakeFiles/sena_msgs_gennodejs.dir/rule
+
+# Convenience name for target.
+sena_msgs_gennodejs: sena/sena_msgs/CMakeFiles/sena_msgs_gennodejs.dir/rule
+
+.PHONY : sena_msgs_gennodejs
+
+# fast build rule for target.
+sena_msgs_gennodejs/fast:
+	cd /home/rizky/sena_ws/build && $(MAKE) -f sena/sena_msgs/CMakeFiles/sena_msgs_gennodejs.dir/build.make sena/sena_msgs/CMakeFiles/sena_msgs_gennodejs.dir/build
+.PHONY : sena_msgs_gennodejs/fast
+
+# Convenience name for target.
+sena/sena_msgs/CMakeFiles/sena_msgs_genlisp.dir/rule:
+	cd /home/rizky/sena_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sena/sena_msgs/CMakeFiles/sena_msgs_genlisp.dir/rule
+.PHONY : sena/sena_msgs/CMakeFiles/sena_msgs_genlisp.dir/rule
+
+# Convenience name for target.
+sena_msgs_genlisp: sena/sena_msgs/CMakeFiles/sena_msgs_genlisp.dir/rule
+
+.PHONY : sena_msgs_genlisp
+
+# fast build rule for target.
+sena_msgs_genlisp/fast:
+	cd /home/rizky/sena_ws/build && $(MAKE) -f sena/sena_msgs/CMakeFiles/sena_msgs_genlisp.dir/build.make sena/sena_msgs/CMakeFiles/sena_msgs_genlisp.dir/build
+.PHONY : sena_msgs_genlisp/fast
+
+# Convenience name for target.
+sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_py.dir/rule:
+	cd /home/rizky/sena_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_py.dir/rule
+.PHONY : sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+sena_msgs_generate_messages_py: sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_py.dir/rule
+
+.PHONY : sena_msgs_generate_messages_py
+
+# fast build rule for target.
+sena_msgs_generate_messages_py/fast:
+	cd /home/rizky/sena_ws/build && $(MAKE) -f sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_py.dir/build.make sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_py.dir/build
+.PHONY : sena_msgs_generate_messages_py/fast
 
 # Help Target
 help:
@@ -599,6 +629,8 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... _sena_msgs_generate_messages_check_deps_Angle"
+	@echo "... test"
+	@echo "... std_srvs_generate_messages_py"
 	@echo "... sena_msgs_generate_messages_cpp"
 	@echo "... _sena_msgs_generate_messages_check_deps_BallInfo"
 	@echo "... std_srvs_generate_messages_lisp"
@@ -608,6 +640,7 @@ help:
 	@echo "... geometry_msgs_generate_messages_nodejs"
 	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... geometry_msgs_generate_messages_lisp"
+	@echo "... _sena_msgs_generate_messages_check_deps_BallHandle"
 	@echo "... sena_msgs_generate_messages"
 	@echo "... sena_msgs_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_eus"
@@ -620,14 +653,13 @@ help:
 	@echo "... sena_msgs_generate_messages_eus"
 	@echo "... std_srvs_generate_messages_cpp"
 	@echo "... _sena_msgs_generate_messages_check_deps_OdomInfo"
-	@echo "... sena_msgs_genlisp"
-	@echo "... geometry_msgs_generate_messages_py"
-	@echo "... sena_msgs_gennodejs"
-	@echo "... sena_msgs_generate_messages_py"
-	@echo "... _sena_msgs_generate_messages_check_deps_PPoint"
 	@echo "... sena_msgs_genpy"
-	@echo "... std_srvs_generate_messages_py"
-	@echo "... test"
+	@echo "... _sena_msgs_generate_messages_check_deps_PPoint"
+	@echo "... geometry_msgs_generate_messages_py"
+	@echo "... _sena_msgs_generate_messages_check_deps_Shoot"
+	@echo "... sena_msgs_gennodejs"
+	@echo "... sena_msgs_genlisp"
+	@echo "... sena_msgs_generate_messages_py"
 .PHONY : help
 
 

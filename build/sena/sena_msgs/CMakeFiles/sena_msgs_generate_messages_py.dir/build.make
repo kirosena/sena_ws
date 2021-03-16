@@ -60,7 +60,10 @@ sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_py: /home/rizky/sena_ws/de
 sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/_OmniVisionInfo.py
 sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/_PPoint.py
 sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/_VelCmd.py
+sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/_BallHandle.py
+sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/_Shoot.py
 sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/__init__.py
+sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/__init__.py
 
 
 /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/_Angle.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
@@ -89,8 +92,8 @@ sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_py: /home/rizky/sena_ws/de
 
 /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/_OmniVisionInfo.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
 /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/_OmniVisionInfo.py: /home/rizky/sena_ws/src/sena/sena_msgs/msg/OmniVisionInfo.msg
-/home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/_OmniVisionInfo.py: /home/rizky/sena_ws/src/sena/sena_msgs/msg/PPoint.msg
 /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/_OmniVisionInfo.py: /home/rizky/sena_ws/src/sena/sena_msgs/msg/BallInfo.msg
+/home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/_OmniVisionInfo.py: /home/rizky/sena_ws/src/sena/sena_msgs/msg/PPoint.msg
 /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/_OmniVisionInfo.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/rizky/sena_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Python from MSG sena_msgs/OmniVisionInfo"
 	cd /home/rizky/sena_ws/build/sena/sena_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/rizky/sena_ws/src/sena/sena_msgs/msg/OmniVisionInfo.msg -Isena_msgs:/home/rizky/sena_ws/src/sena/sena_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p sena_msgs -o /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg
@@ -105,6 +108,16 @@ sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_py: /home/rizky/sena_ws/de
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/rizky/sena_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating Python from MSG sena_msgs/VelCmd"
 	cd /home/rizky/sena_ws/build/sena/sena_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/rizky/sena_ws/src/sena/sena_msgs/msg/VelCmd.msg -Isena_msgs:/home/rizky/sena_ws/src/sena/sena_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p sena_msgs -o /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg
 
+/home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/_BallHandle.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/_BallHandle.py: /home/rizky/sena_ws/src/sena/sena_msgs/srv/BallHandle.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/rizky/sena_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating Python code from SRV sena_msgs/BallHandle"
+	cd /home/rizky/sena_ws/build/sena/sena_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/rizky/sena_ws/src/sena/sena_msgs/srv/BallHandle.srv -Isena_msgs:/home/rizky/sena_ws/src/sena/sena_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p sena_msgs -o /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv
+
+/home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/_Shoot.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/_Shoot.py: /home/rizky/sena_ws/src/sena/sena_msgs/srv/Shoot.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/rizky/sena_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating Python code from SRV sena_msgs/Shoot"
+	cd /home/rizky/sena_ws/build/sena/sena_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/rizky/sena_ws/src/sena/sena_msgs/srv/Shoot.srv -Isena_msgs:/home/rizky/sena_ws/src/sena/sena_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p sena_msgs -o /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv
+
 /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/__init__.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
 /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/__init__.py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/_Angle.py
 /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/__init__.py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/_BallInfo.py
@@ -113,8 +126,23 @@ sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_py: /home/rizky/sena_ws/de
 /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/__init__.py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/_OmniVisionInfo.py
 /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/__init__.py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/_PPoint.py
 /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/__init__.py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/_VelCmd.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/rizky/sena_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating Python msg __init__.py for sena_msgs"
+/home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/__init__.py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/_BallHandle.py
+/home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/__init__.py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/_Shoot.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/rizky/sena_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating Python msg __init__.py for sena_msgs"
 	cd /home/rizky/sena_ws/build/sena/sena_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg --initpy
+
+/home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/__init__.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/__init__.py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/_Angle.py
+/home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/__init__.py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/_BallInfo.py
+/home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/__init__.py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/_MotorInfo.py
+/home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/__init__.py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/_OdomInfo.py
+/home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/__init__.py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/_OmniVisionInfo.py
+/home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/__init__.py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/_PPoint.py
+/home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/__init__.py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/_VelCmd.py
+/home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/__init__.py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/_BallHandle.py
+/home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/__init__.py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/_Shoot.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/rizky/sena_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating Python srv __init__.py for sena_msgs"
+	cd /home/rizky/sena_ws/build/sena/sena_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv --initpy
 
 sena_msgs_generate_messages_py: sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_py
 sena_msgs_generate_messages_py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/_Angle.py
@@ -124,7 +152,10 @@ sena_msgs_generate_messages_py: /home/rizky/sena_ws/devel/lib/python3/dist-packa
 sena_msgs_generate_messages_py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/_OmniVisionInfo.py
 sena_msgs_generate_messages_py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/_PPoint.py
 sena_msgs_generate_messages_py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/_VelCmd.py
+sena_msgs_generate_messages_py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/_BallHandle.py
+sena_msgs_generate_messages_py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/_Shoot.py
 sena_msgs_generate_messages_py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/__init__.py
+sena_msgs_generate_messages_py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/__init__.py
 sena_msgs_generate_messages_py: sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_py.dir/build.make
 
 .PHONY : sena_msgs_generate_messages_py

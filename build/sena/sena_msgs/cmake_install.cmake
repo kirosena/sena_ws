@@ -50,6 +50,13 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/sena_msgs/srv" TYPE FILE FILES
+    "/home/rizky/sena_ws/src/sena/sena_msgs/srv/BallHandle.srv"
+    "/home/rizky/sena_ws/src/sena/sena_msgs/srv/Shoot.srv"
+    )
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/sena_msgs/cmake" TYPE FILE FILES "/home/rizky/sena_ws/build/sena/sena_msgs/catkin_generated/installspace/sena_msgs-msg-paths.cmake")
 endif()
 

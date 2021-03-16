@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "sena_msgs: 7 messages, 0 services")
+message(STATUS "sena_msgs: 7 messages, 2 services")
 
 set(MSG_I_FLAGS "-Isena_msgs:/home/rizky/sena_ws/src/sena/sena_msgs/msg;-Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg")
 
@@ -39,7 +39,7 @@ add_custom_target(_sena_msgs_generate_messages_check_deps_${_filename}
 
 get_filename_component(_filename "/home/rizky/sena_ws/src/sena/sena_msgs/msg/OmniVisionInfo.msg" NAME_WE)
 add_custom_target(_sena_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "sena_msgs" "/home/rizky/sena_ws/src/sena/sena_msgs/msg/OmniVisionInfo.msg" "sena_msgs/PPoint:sena_msgs/BallInfo:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "sena_msgs" "/home/rizky/sena_ws/src/sena/sena_msgs/msg/OmniVisionInfo.msg" "sena_msgs/BallInfo:sena_msgs/PPoint:std_msgs/Header"
 )
 
 get_filename_component(_filename "/home/rizky/sena_ws/src/sena/sena_msgs/msg/PPoint.msg" NAME_WE)
@@ -50,6 +50,16 @@ add_custom_target(_sena_msgs_generate_messages_check_deps_${_filename}
 get_filename_component(_filename "/home/rizky/sena_ws/src/sena/sena_msgs/msg/VelCmd.msg" NAME_WE)
 add_custom_target(_sena_msgs_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "sena_msgs" "/home/rizky/sena_ws/src/sena/sena_msgs/msg/VelCmd.msg" ""
+)
+
+get_filename_component(_filename "/home/rizky/sena_ws/src/sena/sena_msgs/srv/BallHandle.srv" NAME_WE)
+add_custom_target(_sena_msgs_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "sena_msgs" "/home/rizky/sena_ws/src/sena/sena_msgs/srv/BallHandle.srv" ""
+)
+
+get_filename_component(_filename "/home/rizky/sena_ws/src/sena/sena_msgs/srv/Shoot.srv" NAME_WE)
+add_custom_target(_sena_msgs_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "sena_msgs" "/home/rizky/sena_ws/src/sena/sena_msgs/srv/Shoot.srv" ""
 )
 
 #
@@ -85,7 +95,7 @@ _generate_msg_cpp(sena_msgs
 _generate_msg_cpp(sena_msgs
   "/home/rizky/sena_ws/src/sena/sena_msgs/msg/OmniVisionInfo.msg"
   "${MSG_I_FLAGS}"
-  "/home/rizky/sena_ws/src/sena/sena_msgs/msg/PPoint.msg;/home/rizky/sena_ws/src/sena/sena_msgs/msg/BallInfo.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/home/rizky/sena_ws/src/sena/sena_msgs/msg/BallInfo.msg;/home/rizky/sena_ws/src/sena/sena_msgs/msg/PPoint.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/sena_msgs
 )
 _generate_msg_cpp(sena_msgs
@@ -102,6 +112,18 @@ _generate_msg_cpp(sena_msgs
 )
 
 ### Generating Services
+_generate_srv_cpp(sena_msgs
+  "/home/rizky/sena_ws/src/sena/sena_msgs/srv/BallHandle.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/sena_msgs
+)
+_generate_srv_cpp(sena_msgs
+  "/home/rizky/sena_ws/src/sena/sena_msgs/srv/Shoot.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/sena_msgs
+)
 
 ### Generating Module File
 _generate_module_cpp(sena_msgs
@@ -128,6 +150,10 @@ add_dependencies(sena_msgs_generate_messages_cpp _sena_msgs_generate_messages_ch
 get_filename_component(_filename "/home/rizky/sena_ws/src/sena/sena_msgs/msg/PPoint.msg" NAME_WE)
 add_dependencies(sena_msgs_generate_messages_cpp _sena_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/rizky/sena_ws/src/sena/sena_msgs/msg/VelCmd.msg" NAME_WE)
+add_dependencies(sena_msgs_generate_messages_cpp _sena_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/rizky/sena_ws/src/sena/sena_msgs/srv/BallHandle.srv" NAME_WE)
+add_dependencies(sena_msgs_generate_messages_cpp _sena_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/rizky/sena_ws/src/sena/sena_msgs/srv/Shoot.srv" NAME_WE)
 add_dependencies(sena_msgs_generate_messages_cpp _sena_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -166,7 +192,7 @@ _generate_msg_eus(sena_msgs
 _generate_msg_eus(sena_msgs
   "/home/rizky/sena_ws/src/sena/sena_msgs/msg/OmniVisionInfo.msg"
   "${MSG_I_FLAGS}"
-  "/home/rizky/sena_ws/src/sena/sena_msgs/msg/PPoint.msg;/home/rizky/sena_ws/src/sena/sena_msgs/msg/BallInfo.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/home/rizky/sena_ws/src/sena/sena_msgs/msg/BallInfo.msg;/home/rizky/sena_ws/src/sena/sena_msgs/msg/PPoint.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/sena_msgs
 )
 _generate_msg_eus(sena_msgs
@@ -183,6 +209,18 @@ _generate_msg_eus(sena_msgs
 )
 
 ### Generating Services
+_generate_srv_eus(sena_msgs
+  "/home/rizky/sena_ws/src/sena/sena_msgs/srv/BallHandle.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/sena_msgs
+)
+_generate_srv_eus(sena_msgs
+  "/home/rizky/sena_ws/src/sena/sena_msgs/srv/Shoot.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/sena_msgs
+)
 
 ### Generating Module File
 _generate_module_eus(sena_msgs
@@ -209,6 +247,10 @@ add_dependencies(sena_msgs_generate_messages_eus _sena_msgs_generate_messages_ch
 get_filename_component(_filename "/home/rizky/sena_ws/src/sena/sena_msgs/msg/PPoint.msg" NAME_WE)
 add_dependencies(sena_msgs_generate_messages_eus _sena_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/rizky/sena_ws/src/sena/sena_msgs/msg/VelCmd.msg" NAME_WE)
+add_dependencies(sena_msgs_generate_messages_eus _sena_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/rizky/sena_ws/src/sena/sena_msgs/srv/BallHandle.srv" NAME_WE)
+add_dependencies(sena_msgs_generate_messages_eus _sena_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/rizky/sena_ws/src/sena/sena_msgs/srv/Shoot.srv" NAME_WE)
 add_dependencies(sena_msgs_generate_messages_eus _sena_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -247,7 +289,7 @@ _generate_msg_lisp(sena_msgs
 _generate_msg_lisp(sena_msgs
   "/home/rizky/sena_ws/src/sena/sena_msgs/msg/OmniVisionInfo.msg"
   "${MSG_I_FLAGS}"
-  "/home/rizky/sena_ws/src/sena/sena_msgs/msg/PPoint.msg;/home/rizky/sena_ws/src/sena/sena_msgs/msg/BallInfo.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/home/rizky/sena_ws/src/sena/sena_msgs/msg/BallInfo.msg;/home/rizky/sena_ws/src/sena/sena_msgs/msg/PPoint.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/sena_msgs
 )
 _generate_msg_lisp(sena_msgs
@@ -264,6 +306,18 @@ _generate_msg_lisp(sena_msgs
 )
 
 ### Generating Services
+_generate_srv_lisp(sena_msgs
+  "/home/rizky/sena_ws/src/sena/sena_msgs/srv/BallHandle.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/sena_msgs
+)
+_generate_srv_lisp(sena_msgs
+  "/home/rizky/sena_ws/src/sena/sena_msgs/srv/Shoot.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/sena_msgs
+)
 
 ### Generating Module File
 _generate_module_lisp(sena_msgs
@@ -290,6 +344,10 @@ add_dependencies(sena_msgs_generate_messages_lisp _sena_msgs_generate_messages_c
 get_filename_component(_filename "/home/rizky/sena_ws/src/sena/sena_msgs/msg/PPoint.msg" NAME_WE)
 add_dependencies(sena_msgs_generate_messages_lisp _sena_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/rizky/sena_ws/src/sena/sena_msgs/msg/VelCmd.msg" NAME_WE)
+add_dependencies(sena_msgs_generate_messages_lisp _sena_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/rizky/sena_ws/src/sena/sena_msgs/srv/BallHandle.srv" NAME_WE)
+add_dependencies(sena_msgs_generate_messages_lisp _sena_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/rizky/sena_ws/src/sena/sena_msgs/srv/Shoot.srv" NAME_WE)
 add_dependencies(sena_msgs_generate_messages_lisp _sena_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -328,7 +386,7 @@ _generate_msg_nodejs(sena_msgs
 _generate_msg_nodejs(sena_msgs
   "/home/rizky/sena_ws/src/sena/sena_msgs/msg/OmniVisionInfo.msg"
   "${MSG_I_FLAGS}"
-  "/home/rizky/sena_ws/src/sena/sena_msgs/msg/PPoint.msg;/home/rizky/sena_ws/src/sena/sena_msgs/msg/BallInfo.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/home/rizky/sena_ws/src/sena/sena_msgs/msg/BallInfo.msg;/home/rizky/sena_ws/src/sena/sena_msgs/msg/PPoint.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/sena_msgs
 )
 _generate_msg_nodejs(sena_msgs
@@ -345,6 +403,18 @@ _generate_msg_nodejs(sena_msgs
 )
 
 ### Generating Services
+_generate_srv_nodejs(sena_msgs
+  "/home/rizky/sena_ws/src/sena/sena_msgs/srv/BallHandle.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/sena_msgs
+)
+_generate_srv_nodejs(sena_msgs
+  "/home/rizky/sena_ws/src/sena/sena_msgs/srv/Shoot.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/sena_msgs
+)
 
 ### Generating Module File
 _generate_module_nodejs(sena_msgs
@@ -371,6 +441,10 @@ add_dependencies(sena_msgs_generate_messages_nodejs _sena_msgs_generate_messages
 get_filename_component(_filename "/home/rizky/sena_ws/src/sena/sena_msgs/msg/PPoint.msg" NAME_WE)
 add_dependencies(sena_msgs_generate_messages_nodejs _sena_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/rizky/sena_ws/src/sena/sena_msgs/msg/VelCmd.msg" NAME_WE)
+add_dependencies(sena_msgs_generate_messages_nodejs _sena_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/rizky/sena_ws/src/sena/sena_msgs/srv/BallHandle.srv" NAME_WE)
+add_dependencies(sena_msgs_generate_messages_nodejs _sena_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/rizky/sena_ws/src/sena/sena_msgs/srv/Shoot.srv" NAME_WE)
 add_dependencies(sena_msgs_generate_messages_nodejs _sena_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -409,7 +483,7 @@ _generate_msg_py(sena_msgs
 _generate_msg_py(sena_msgs
   "/home/rizky/sena_ws/src/sena/sena_msgs/msg/OmniVisionInfo.msg"
   "${MSG_I_FLAGS}"
-  "/home/rizky/sena_ws/src/sena/sena_msgs/msg/PPoint.msg;/home/rizky/sena_ws/src/sena/sena_msgs/msg/BallInfo.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/home/rizky/sena_ws/src/sena/sena_msgs/msg/BallInfo.msg;/home/rizky/sena_ws/src/sena/sena_msgs/msg/PPoint.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/sena_msgs
 )
 _generate_msg_py(sena_msgs
@@ -426,6 +500,18 @@ _generate_msg_py(sena_msgs
 )
 
 ### Generating Services
+_generate_srv_py(sena_msgs
+  "/home/rizky/sena_ws/src/sena/sena_msgs/srv/BallHandle.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/sena_msgs
+)
+_generate_srv_py(sena_msgs
+  "/home/rizky/sena_ws/src/sena/sena_msgs/srv/Shoot.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/sena_msgs
+)
 
 ### Generating Module File
 _generate_module_py(sena_msgs
@@ -452,6 +538,10 @@ add_dependencies(sena_msgs_generate_messages_py _sena_msgs_generate_messages_che
 get_filename_component(_filename "/home/rizky/sena_ws/src/sena/sena_msgs/msg/PPoint.msg" NAME_WE)
 add_dependencies(sena_msgs_generate_messages_py _sena_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/rizky/sena_ws/src/sena/sena_msgs/msg/VelCmd.msg" NAME_WE)
+add_dependencies(sena_msgs_generate_messages_py _sena_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/rizky/sena_ws/src/sena/sena_msgs/srv/BallHandle.srv" NAME_WE)
+add_dependencies(sena_msgs_generate_messages_py _sena_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/rizky/sena_ws/src/sena/sena_msgs/srv/Shoot.srv" NAME_WE)
 add_dependencies(sena_msgs_generate_messages_py _sena_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

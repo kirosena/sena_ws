@@ -7,6 +7,9 @@ file(REMOVE_RECURSE
   "/home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/_PPoint.py"
   "/home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/_VelCmd.py"
   "/home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/__init__.py"
+  "/home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/_BallHandle.py"
+  "/home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/_Shoot.py"
+  "/home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/__init__.py"
   "CMakeFiles/sena_msgs_generate_messages_py"
 )
 
