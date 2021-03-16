@@ -1,0 +1,8 @@
+prefix=/home/rizky/sena_ws/devel
+
+Name: sena_controller
+Description: Description of sena_controller
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib -lsena_controller
+Requires: roscpp rospy std_msgs
