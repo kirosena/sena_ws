@@ -19,4 +19,6 @@
     (:file "_package_PPoint" :depends-on ("_package"))
     (:file "VelCmd" :depends-on ("_package_VelCmd"))
     (:file "_package_VelCmd" :depends-on ("_package"))
+    (:file "Velocity" :depends-on ("_package_Velocity"))
+    (:file "_package_Velocity" :depends-on ("_package"))
   ))

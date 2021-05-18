@@ -5,3 +5,4 @@ from ._OdomInfo import *
 from ._OmniVisionInfo import *
 from ._PPoint import *
 from ._VelCmd import *
+from ._Velocity import *

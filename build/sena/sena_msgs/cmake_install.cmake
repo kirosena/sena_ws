@@ -46,6 +46,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     "/home/rizky/sena_ws/src/sena/sena_msgs/msg/OmniVisionInfo.msg"
     "/home/rizky/sena_ws/src/sena/sena_msgs/msg/PPoint.msg"
     "/home/rizky/sena_ws/src/sena/sena_msgs/msg/VelCmd.msg"
+    "/home/rizky/sena_ws/src/sena/sena_msgs/msg/Velocity.msg"
     )
 endif()
 
@@ -53,6 +54,10 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/sena_msgs/srv" TYPE FILE FILES
     "/home/rizky/sena_ws/src/sena/sena_msgs/srv/BallHandle.srv"
     "/home/rizky/sena_ws/src/sena/sena_msgs/srv/Shoot.srv"
+    "/home/rizky/sena_ws/src/sena/sena_msgs/srv/Floats_array.srv"
+    "/home/rizky/sena_ws/src/sena/sena_msgs/srv/KinematicsForward.srv"
+    "/home/rizky/sena_ws/src/sena/sena_msgs/srv/KinematicsInverse.srv"
+    "/home/rizky/sena_ws/src/sena/sena_msgs/srv/FrameToFrame.srv"
     )
 endif()
 

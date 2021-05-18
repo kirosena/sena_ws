@@ -26,6 +26,7 @@ add_message_files(
   OmniVisionInfo.msg
   PPoint.msg
   VelCmd.msg
+  Velocity.msg
 )
 
 ## Generate services in the 'srv' folder
@@ -33,11 +34,17 @@ add_service_files(
   FILES
   BallHandle.srv
   Shoot.srv
+  Floats_array.srv
+  KinematicsForward.srv
+  KinematicsInverse.srv
+  FrameToFrame.srv
 )
 
 ## Generate added messages and services with any dependencies listed here
 generate_messages(
-  DEPENDENCIES geometry_msgs std_msgs
+  DEPENDENCIES 
+    geometry_msgs 
+    std_msgs
 )
 
 catkin_package(

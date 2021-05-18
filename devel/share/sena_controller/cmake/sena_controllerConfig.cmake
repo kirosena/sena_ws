@@ -185,7 +185,7 @@ foreach(t ${sena_controller_EXPORTED_TARGETS})
   endif()
 endforeach()
 
-set(depends "roscpp;rospy;std_msgs")
+set(depends "roscpp;rospy;std_msgs;sena_msgs;sensor_msgs")
 foreach(depend ${depends})
   string(REPLACE " " ";" depend_list ${depend})
   # the package name of the dependency must be kept in a unique variable so that it is not overwritten in recursive calls
@@ -211,7 +211,7 @@ foreach(depend ${depends})
   _unpack_libraries_with_build_configuration(sena_controller_LIBRARIES ${sena_controller_LIBRARIES})
 
   _list_append_unique(sena_controller_LIBRARY_DIRS ${${sena_controller_dep}_LIBRARY_DIRS})
-  list(APPEND sena_controller_EXPORTED_TARGETS ${${sena_controller_dep}_EXPORTED_TARGETS})
+  _list_append_deduplicate(sena_controller_EXPORTED_TARGETS ${${sena_controller_dep}_EXPORTED_TARGETS})
 endforeach()
 
 set(pkg_cfg_extras "")

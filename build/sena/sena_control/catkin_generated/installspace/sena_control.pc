@@ -1,0 +1,8 @@
+prefix=/home/rizky/sena_ws/install
+
+Name: sena_control
+Description: Description of sena_control
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: message_generation controller_manager roscpp rospy std_msgs std_srvs

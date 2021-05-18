@@ -60,8 +60,13 @@ sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_eus: /home/rizky/sena_ws/d
 sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_eus: /home/rizky/sena_ws/devel/share/roseus/ros/sena_msgs/msg/OmniVisionInfo.l
 sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_eus: /home/rizky/sena_ws/devel/share/roseus/ros/sena_msgs/msg/PPoint.l
 sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_eus: /home/rizky/sena_ws/devel/share/roseus/ros/sena_msgs/msg/VelCmd.l
+sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_eus: /home/rizky/sena_ws/devel/share/roseus/ros/sena_msgs/msg/Velocity.l
 sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_eus: /home/rizky/sena_ws/devel/share/roseus/ros/sena_msgs/srv/BallHandle.l
 sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_eus: /home/rizky/sena_ws/devel/share/roseus/ros/sena_msgs/srv/Shoot.l
+sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_eus: /home/rizky/sena_ws/devel/share/roseus/ros/sena_msgs/srv/Floats_array.l
+sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_eus: /home/rizky/sena_ws/devel/share/roseus/ros/sena_msgs/srv/KinematicsForward.l
+sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_eus: /home/rizky/sena_ws/devel/share/roseus/ros/sena_msgs/srv/KinematicsInverse.l
+sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_eus: /home/rizky/sena_ws/devel/share/roseus/ros/sena_msgs/srv/FrameToFrame.l
 sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_eus: /home/rizky/sena_ws/devel/share/roseus/ros/sena_msgs/manifest.l
 
 
@@ -91,8 +96,8 @@ sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_eus: /home/rizky/sena_ws/d
 
 /home/rizky/sena_ws/devel/share/roseus/ros/sena_msgs/msg/OmniVisionInfo.l: /opt/ros/noetic/lib/geneus/gen_eus.py
 /home/rizky/sena_ws/devel/share/roseus/ros/sena_msgs/msg/OmniVisionInfo.l: /home/rizky/sena_ws/src/sena/sena_msgs/msg/OmniVisionInfo.msg
-/home/rizky/sena_ws/devel/share/roseus/ros/sena_msgs/msg/OmniVisionInfo.l: /home/rizky/sena_ws/src/sena/sena_msgs/msg/BallInfo.msg
 /home/rizky/sena_ws/devel/share/roseus/ros/sena_msgs/msg/OmniVisionInfo.l: /home/rizky/sena_ws/src/sena/sena_msgs/msg/PPoint.msg
+/home/rizky/sena_ws/devel/share/roseus/ros/sena_msgs/msg/OmniVisionInfo.l: /home/rizky/sena_ws/src/sena/sena_msgs/msg/BallInfo.msg
 /home/rizky/sena_ws/devel/share/roseus/ros/sena_msgs/msg/OmniVisionInfo.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/rizky/sena_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating EusLisp code from sena_msgs/OmniVisionInfo.msg"
 	cd /home/rizky/sena_ws/build/sena/sena_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/rizky/sena_ws/src/sena/sena_msgs/msg/OmniVisionInfo.msg -Isena_msgs:/home/rizky/sena_ws/src/sena/sena_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p sena_msgs -o /home/rizky/sena_ws/devel/share/roseus/ros/sena_msgs/msg
@@ -107,18 +112,48 @@ sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_eus: /home/rizky/sena_ws/d
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/rizky/sena_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating EusLisp code from sena_msgs/VelCmd.msg"
 	cd /home/rizky/sena_ws/build/sena/sena_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/rizky/sena_ws/src/sena/sena_msgs/msg/VelCmd.msg -Isena_msgs:/home/rizky/sena_ws/src/sena/sena_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p sena_msgs -o /home/rizky/sena_ws/devel/share/roseus/ros/sena_msgs/msg
 
+/home/rizky/sena_ws/devel/share/roseus/ros/sena_msgs/msg/Velocity.l: /opt/ros/noetic/lib/geneus/gen_eus.py
+/home/rizky/sena_ws/devel/share/roseus/ros/sena_msgs/msg/Velocity.l: /home/rizky/sena_ws/src/sena/sena_msgs/msg/Velocity.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/rizky/sena_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating EusLisp code from sena_msgs/Velocity.msg"
+	cd /home/rizky/sena_ws/build/sena/sena_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/rizky/sena_ws/src/sena/sena_msgs/msg/Velocity.msg -Isena_msgs:/home/rizky/sena_ws/src/sena/sena_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p sena_msgs -o /home/rizky/sena_ws/devel/share/roseus/ros/sena_msgs/msg
+
 /home/rizky/sena_ws/devel/share/roseus/ros/sena_msgs/srv/BallHandle.l: /opt/ros/noetic/lib/geneus/gen_eus.py
 /home/rizky/sena_ws/devel/share/roseus/ros/sena_msgs/srv/BallHandle.l: /home/rizky/sena_ws/src/sena/sena_msgs/srv/BallHandle.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/rizky/sena_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating EusLisp code from sena_msgs/BallHandle.srv"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/rizky/sena_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating EusLisp code from sena_msgs/BallHandle.srv"
 	cd /home/rizky/sena_ws/build/sena/sena_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/rizky/sena_ws/src/sena/sena_msgs/srv/BallHandle.srv -Isena_msgs:/home/rizky/sena_ws/src/sena/sena_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p sena_msgs -o /home/rizky/sena_ws/devel/share/roseus/ros/sena_msgs/srv
 
 /home/rizky/sena_ws/devel/share/roseus/ros/sena_msgs/srv/Shoot.l: /opt/ros/noetic/lib/geneus/gen_eus.py
 /home/rizky/sena_ws/devel/share/roseus/ros/sena_msgs/srv/Shoot.l: /home/rizky/sena_ws/src/sena/sena_msgs/srv/Shoot.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/rizky/sena_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating EusLisp code from sena_msgs/Shoot.srv"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/rizky/sena_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating EusLisp code from sena_msgs/Shoot.srv"
 	cd /home/rizky/sena_ws/build/sena/sena_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/rizky/sena_ws/src/sena/sena_msgs/srv/Shoot.srv -Isena_msgs:/home/rizky/sena_ws/src/sena/sena_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p sena_msgs -o /home/rizky/sena_ws/devel/share/roseus/ros/sena_msgs/srv
 
+/home/rizky/sena_ws/devel/share/roseus/ros/sena_msgs/srv/Floats_array.l: /opt/ros/noetic/lib/geneus/gen_eus.py
+/home/rizky/sena_ws/devel/share/roseus/ros/sena_msgs/srv/Floats_array.l: /home/rizky/sena_ws/src/sena/sena_msgs/srv/Floats_array.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/rizky/sena_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating EusLisp code from sena_msgs/Floats_array.srv"
+	cd /home/rizky/sena_ws/build/sena/sena_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/rizky/sena_ws/src/sena/sena_msgs/srv/Floats_array.srv -Isena_msgs:/home/rizky/sena_ws/src/sena/sena_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p sena_msgs -o /home/rizky/sena_ws/devel/share/roseus/ros/sena_msgs/srv
+
+/home/rizky/sena_ws/devel/share/roseus/ros/sena_msgs/srv/KinematicsForward.l: /opt/ros/noetic/lib/geneus/gen_eus.py
+/home/rizky/sena_ws/devel/share/roseus/ros/sena_msgs/srv/KinematicsForward.l: /home/rizky/sena_ws/src/sena/sena_msgs/srv/KinematicsForward.srv
+/home/rizky/sena_ws/devel/share/roseus/ros/sena_msgs/srv/KinematicsForward.l: /home/rizky/sena_ws/src/sena/sena_msgs/msg/Velocity.msg
+/home/rizky/sena_ws/devel/share/roseus/ros/sena_msgs/srv/KinematicsForward.l: /opt/ros/noetic/share/geometry_msgs/msg/Pose2D.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/rizky/sena_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Generating EusLisp code from sena_msgs/KinematicsForward.srv"
+	cd /home/rizky/sena_ws/build/sena/sena_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/rizky/sena_ws/src/sena/sena_msgs/srv/KinematicsForward.srv -Isena_msgs:/home/rizky/sena_ws/src/sena/sena_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p sena_msgs -o /home/rizky/sena_ws/devel/share/roseus/ros/sena_msgs/srv
+
+/home/rizky/sena_ws/devel/share/roseus/ros/sena_msgs/srv/KinematicsInverse.l: /opt/ros/noetic/lib/geneus/gen_eus.py
+/home/rizky/sena_ws/devel/share/roseus/ros/sena_msgs/srv/KinematicsInverse.l: /home/rizky/sena_ws/src/sena/sena_msgs/srv/KinematicsInverse.srv
+/home/rizky/sena_ws/devel/share/roseus/ros/sena_msgs/srv/KinematicsInverse.l: /home/rizky/sena_ws/src/sena/sena_msgs/msg/Velocity.msg
+/home/rizky/sena_ws/devel/share/roseus/ros/sena_msgs/srv/KinematicsInverse.l: /opt/ros/noetic/share/geometry_msgs/msg/Pose2D.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/rizky/sena_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Generating EusLisp code from sena_msgs/KinematicsInverse.srv"
+	cd /home/rizky/sena_ws/build/sena/sena_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/rizky/sena_ws/src/sena/sena_msgs/srv/KinematicsInverse.srv -Isena_msgs:/home/rizky/sena_ws/src/sena/sena_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p sena_msgs -o /home/rizky/sena_ws/devel/share/roseus/ros/sena_msgs/srv
+
+/home/rizky/sena_ws/devel/share/roseus/ros/sena_msgs/srv/FrameToFrame.l: /opt/ros/noetic/lib/geneus/gen_eus.py
+/home/rizky/sena_ws/devel/share/roseus/ros/sena_msgs/srv/FrameToFrame.l: /home/rizky/sena_ws/src/sena/sena_msgs/srv/FrameToFrame.srv
+/home/rizky/sena_ws/devel/share/roseus/ros/sena_msgs/srv/FrameToFrame.l: /opt/ros/noetic/share/geometry_msgs/msg/Pose2D.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/rizky/sena_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Generating EusLisp code from sena_msgs/FrameToFrame.srv"
+	cd /home/rizky/sena_ws/build/sena/sena_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/rizky/sena_ws/src/sena/sena_msgs/srv/FrameToFrame.srv -Isena_msgs:/home/rizky/sena_ws/src/sena/sena_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p sena_msgs -o /home/rizky/sena_ws/devel/share/roseus/ros/sena_msgs/srv
+
 /home/rizky/sena_ws/devel/share/roseus/ros/sena_msgs/manifest.l: /opt/ros/noetic/lib/geneus/gen_eus.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/rizky/sena_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating EusLisp manifest code for sena_msgs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/rizky/sena_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Generating EusLisp manifest code for sena_msgs"
 	cd /home/rizky/sena_ws/build/sena/sena_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/rizky/sena_ws/devel/share/roseus/ros/sena_msgs sena_msgs geometry_msgs std_msgs
 
 sena_msgs_generate_messages_eus: sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_eus
@@ -129,8 +164,13 @@ sena_msgs_generate_messages_eus: /home/rizky/sena_ws/devel/share/roseus/ros/sena
 sena_msgs_generate_messages_eus: /home/rizky/sena_ws/devel/share/roseus/ros/sena_msgs/msg/OmniVisionInfo.l
 sena_msgs_generate_messages_eus: /home/rizky/sena_ws/devel/share/roseus/ros/sena_msgs/msg/PPoint.l
 sena_msgs_generate_messages_eus: /home/rizky/sena_ws/devel/share/roseus/ros/sena_msgs/msg/VelCmd.l
+sena_msgs_generate_messages_eus: /home/rizky/sena_ws/devel/share/roseus/ros/sena_msgs/msg/Velocity.l
 sena_msgs_generate_messages_eus: /home/rizky/sena_ws/devel/share/roseus/ros/sena_msgs/srv/BallHandle.l
 sena_msgs_generate_messages_eus: /home/rizky/sena_ws/devel/share/roseus/ros/sena_msgs/srv/Shoot.l
+sena_msgs_generate_messages_eus: /home/rizky/sena_ws/devel/share/roseus/ros/sena_msgs/srv/Floats_array.l
+sena_msgs_generate_messages_eus: /home/rizky/sena_ws/devel/share/roseus/ros/sena_msgs/srv/KinematicsForward.l
+sena_msgs_generate_messages_eus: /home/rizky/sena_ws/devel/share/roseus/ros/sena_msgs/srv/KinematicsInverse.l
+sena_msgs_generate_messages_eus: /home/rizky/sena_ws/devel/share/roseus/ros/sena_msgs/srv/FrameToFrame.l
 sena_msgs_generate_messages_eus: /home/rizky/sena_ws/devel/share/roseus/ros/sena_msgs/manifest.l
 sena_msgs_generate_messages_eus: sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_eus.dir/build.make
 

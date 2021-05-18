@@ -1,0 +1,6 @@
+<laucnh>
+    <param name="sena_controller/parameter/wheel/radius" value="0.029"/>
+    <param name="sena_controller/parameter/initial/x" value="0.0"/>
+    <param name="sena_controller/parameter/initial/y" value="0.0"/>
+    <param name="sena_controller/parameter/initial/theta" value="0.0"/>
+</laucnh>

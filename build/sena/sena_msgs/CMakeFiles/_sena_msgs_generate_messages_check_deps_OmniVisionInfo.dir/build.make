@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/rizky/sena_ws/build
 include sena/sena_msgs/CMakeFiles/_sena_msgs_generate_messages_check_deps_OmniVisionInfo.dir/progress.make
 
 sena/sena_msgs/CMakeFiles/_sena_msgs_generate_messages_check_deps_OmniVisionInfo:
-	cd /home/rizky/sena_ws/build/sena/sena_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py sena_msgs /home/rizky/sena_ws/src/sena/sena_msgs/msg/OmniVisionInfo.msg sena_msgs/BallInfo:sena_msgs/PPoint:std_msgs/Header
+	cd /home/rizky/sena_ws/build/sena/sena_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py sena_msgs /home/rizky/sena_ws/src/sena/sena_msgs/msg/OmniVisionInfo.msg sena_msgs/PPoint:sena_msgs/BallInfo:std_msgs/Header
 
 _sena_msgs_generate_messages_check_deps_OmniVisionInfo: sena/sena_msgs/CMakeFiles/_sena_msgs_generate_messages_check_deps_OmniVisionInfo
 _sena_msgs_generate_messages_check_deps_OmniVisionInfo: sena/sena_msgs/CMakeFiles/_sena_msgs_generate_messages_check_deps_OmniVisionInfo.dir/build.make

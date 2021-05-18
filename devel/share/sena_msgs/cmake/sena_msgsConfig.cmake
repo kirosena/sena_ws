@@ -211,7 +211,7 @@ foreach(depend ${depends})
   _unpack_libraries_with_build_configuration(sena_msgs_LIBRARIES ${sena_msgs_LIBRARIES})
 
   _list_append_unique(sena_msgs_LIBRARY_DIRS ${${sena_msgs_dep}_LIBRARY_DIRS})
-  list(APPEND sena_msgs_EXPORTED_TARGETS ${${sena_msgs_dep}_EXPORTED_TARGETS})
+  _list_append_deduplicate(sena_msgs_EXPORTED_TARGETS ${${sena_msgs_dep}_EXPORTED_TARGETS})
 endforeach()
 
 set(pkg_cfg_extras "sena_msgs-msg-extras.cmake")

@@ -15,5 +15,7 @@
    "PPOINT"
    "<VELCMD>"
    "VELCMD"
+   "<VELOCITY>"
+   "VELOCITY"
   ))
 

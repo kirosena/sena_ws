@@ -52,3 +52,15 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/sena_controller" TYPE FILE FILES "/home/rizky/sena_ws/src/sena/sena_controller/package.xml")
 endif()
 
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/sena_controller" TYPE PROGRAM FILES "/home/rizky/sena_ws/build/sena/sena_controller/catkin_generated/installspace/teleop_twist_keyboard.py")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/sena_controller" TYPE PROGRAM FILES "/home/rizky/sena_ws/build/sena/sena_controller/catkin_generated/installspace/motorsub.py")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/sena_controller" TYPE PROGRAM FILES "/home/rizky/sena_ws/build/sena/sena_controller/catkin_generated/installspace/recieve_from_arduino.py")
+endif()
+

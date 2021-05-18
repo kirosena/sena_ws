@@ -60,8 +60,13 @@ sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_py: /home/rizky/sena_ws/de
 sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/_OmniVisionInfo.py
 sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/_PPoint.py
 sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/_VelCmd.py
+sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/_Velocity.py
 sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/_BallHandle.py
 sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/_Shoot.py
+sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/_Floats_array.py
+sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/_KinematicsForward.py
+sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/_KinematicsInverse.py
+sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/_FrameToFrame.py
 sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/__init__.py
 sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/__init__.py
 
@@ -92,8 +97,8 @@ sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_py: /home/rizky/sena_ws/de
 
 /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/_OmniVisionInfo.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
 /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/_OmniVisionInfo.py: /home/rizky/sena_ws/src/sena/sena_msgs/msg/OmniVisionInfo.msg
-/home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/_OmniVisionInfo.py: /home/rizky/sena_ws/src/sena/sena_msgs/msg/BallInfo.msg
 /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/_OmniVisionInfo.py: /home/rizky/sena_ws/src/sena/sena_msgs/msg/PPoint.msg
+/home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/_OmniVisionInfo.py: /home/rizky/sena_ws/src/sena/sena_msgs/msg/BallInfo.msg
 /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/_OmniVisionInfo.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/rizky/sena_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Python from MSG sena_msgs/OmniVisionInfo"
 	cd /home/rizky/sena_ws/build/sena/sena_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/rizky/sena_ws/src/sena/sena_msgs/msg/OmniVisionInfo.msg -Isena_msgs:/home/rizky/sena_ws/src/sena/sena_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p sena_msgs -o /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg
@@ -108,15 +113,45 @@ sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_py: /home/rizky/sena_ws/de
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/rizky/sena_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating Python from MSG sena_msgs/VelCmd"
 	cd /home/rizky/sena_ws/build/sena/sena_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/rizky/sena_ws/src/sena/sena_msgs/msg/VelCmd.msg -Isena_msgs:/home/rizky/sena_ws/src/sena/sena_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p sena_msgs -o /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg
 
+/home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/_Velocity.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/_Velocity.py: /home/rizky/sena_ws/src/sena/sena_msgs/msg/Velocity.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/rizky/sena_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating Python from MSG sena_msgs/Velocity"
+	cd /home/rizky/sena_ws/build/sena/sena_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/rizky/sena_ws/src/sena/sena_msgs/msg/Velocity.msg -Isena_msgs:/home/rizky/sena_ws/src/sena/sena_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p sena_msgs -o /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg
+
 /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/_BallHandle.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
 /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/_BallHandle.py: /home/rizky/sena_ws/src/sena/sena_msgs/srv/BallHandle.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/rizky/sena_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating Python code from SRV sena_msgs/BallHandle"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/rizky/sena_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating Python code from SRV sena_msgs/BallHandle"
 	cd /home/rizky/sena_ws/build/sena/sena_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/rizky/sena_ws/src/sena/sena_msgs/srv/BallHandle.srv -Isena_msgs:/home/rizky/sena_ws/src/sena/sena_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p sena_msgs -o /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv
 
 /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/_Shoot.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
 /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/_Shoot.py: /home/rizky/sena_ws/src/sena/sena_msgs/srv/Shoot.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/rizky/sena_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating Python code from SRV sena_msgs/Shoot"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/rizky/sena_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating Python code from SRV sena_msgs/Shoot"
 	cd /home/rizky/sena_ws/build/sena/sena_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/rizky/sena_ws/src/sena/sena_msgs/srv/Shoot.srv -Isena_msgs:/home/rizky/sena_ws/src/sena/sena_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p sena_msgs -o /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv
+
+/home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/_Floats_array.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/_Floats_array.py: /home/rizky/sena_ws/src/sena/sena_msgs/srv/Floats_array.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/rizky/sena_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating Python code from SRV sena_msgs/Floats_array"
+	cd /home/rizky/sena_ws/build/sena/sena_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/rizky/sena_ws/src/sena/sena_msgs/srv/Floats_array.srv -Isena_msgs:/home/rizky/sena_ws/src/sena/sena_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p sena_msgs -o /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv
+
+/home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/_KinematicsForward.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/_KinematicsForward.py: /home/rizky/sena_ws/src/sena/sena_msgs/srv/KinematicsForward.srv
+/home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/_KinematicsForward.py: /home/rizky/sena_ws/src/sena/sena_msgs/msg/Velocity.msg
+/home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/_KinematicsForward.py: /opt/ros/noetic/share/geometry_msgs/msg/Pose2D.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/rizky/sena_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Generating Python code from SRV sena_msgs/KinematicsForward"
+	cd /home/rizky/sena_ws/build/sena/sena_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/rizky/sena_ws/src/sena/sena_msgs/srv/KinematicsForward.srv -Isena_msgs:/home/rizky/sena_ws/src/sena/sena_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p sena_msgs -o /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv
+
+/home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/_KinematicsInverse.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/_KinematicsInverse.py: /home/rizky/sena_ws/src/sena/sena_msgs/srv/KinematicsInverse.srv
+/home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/_KinematicsInverse.py: /home/rizky/sena_ws/src/sena/sena_msgs/msg/Velocity.msg
+/home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/_KinematicsInverse.py: /opt/ros/noetic/share/geometry_msgs/msg/Pose2D.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/rizky/sena_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Generating Python code from SRV sena_msgs/KinematicsInverse"
+	cd /home/rizky/sena_ws/build/sena/sena_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/rizky/sena_ws/src/sena/sena_msgs/srv/KinematicsInverse.srv -Isena_msgs:/home/rizky/sena_ws/src/sena/sena_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p sena_msgs -o /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv
+
+/home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/_FrameToFrame.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/_FrameToFrame.py: /home/rizky/sena_ws/src/sena/sena_msgs/srv/FrameToFrame.srv
+/home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/_FrameToFrame.py: /opt/ros/noetic/share/geometry_msgs/msg/Pose2D.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/rizky/sena_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Generating Python code from SRV sena_msgs/FrameToFrame"
+	cd /home/rizky/sena_ws/build/sena/sena_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/rizky/sena_ws/src/sena/sena_msgs/srv/FrameToFrame.srv -Isena_msgs:/home/rizky/sena_ws/src/sena/sena_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p sena_msgs -o /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv
 
 /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/__init__.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
 /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/__init__.py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/_Angle.py
@@ -126,9 +161,14 @@ sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_py: /home/rizky/sena_ws/de
 /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/__init__.py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/_OmniVisionInfo.py
 /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/__init__.py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/_PPoint.py
 /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/__init__.py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/_VelCmd.py
+/home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/__init__.py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/_Velocity.py
 /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/__init__.py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/_BallHandle.py
 /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/__init__.py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/_Shoot.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/rizky/sena_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating Python msg __init__.py for sena_msgs"
+/home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/__init__.py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/_Floats_array.py
+/home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/__init__.py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/_KinematicsForward.py
+/home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/__init__.py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/_KinematicsInverse.py
+/home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/__init__.py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/_FrameToFrame.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/rizky/sena_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Generating Python msg __init__.py for sena_msgs"
 	cd /home/rizky/sena_ws/build/sena/sena_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg --initpy
 
 /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/__init__.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
@@ -139,9 +179,14 @@ sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_py: /home/rizky/sena_ws/de
 /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/__init__.py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/_OmniVisionInfo.py
 /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/__init__.py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/_PPoint.py
 /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/__init__.py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/_VelCmd.py
+/home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/__init__.py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/_Velocity.py
 /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/__init__.py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/_BallHandle.py
 /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/__init__.py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/_Shoot.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/rizky/sena_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating Python srv __init__.py for sena_msgs"
+/home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/__init__.py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/_Floats_array.py
+/home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/__init__.py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/_KinematicsForward.py
+/home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/__init__.py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/_KinematicsInverse.py
+/home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/__init__.py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/_FrameToFrame.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/rizky/sena_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Generating Python srv __init__.py for sena_msgs"
 	cd /home/rizky/sena_ws/build/sena/sena_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv --initpy
 
 sena_msgs_generate_messages_py: sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_py
@@ -152,8 +197,13 @@ sena_msgs_generate_messages_py: /home/rizky/sena_ws/devel/lib/python3/dist-packa
 sena_msgs_generate_messages_py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/_OmniVisionInfo.py
 sena_msgs_generate_messages_py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/_PPoint.py
 sena_msgs_generate_messages_py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/_VelCmd.py
+sena_msgs_generate_messages_py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/_Velocity.py
 sena_msgs_generate_messages_py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/_BallHandle.py
 sena_msgs_generate_messages_py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/_Shoot.py
+sena_msgs_generate_messages_py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/_Floats_array.py
+sena_msgs_generate_messages_py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/_KinematicsForward.py
+sena_msgs_generate_messages_py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/_KinematicsInverse.py
+sena_msgs_generate_messages_py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/_FrameToFrame.py
 sena_msgs_generate_messages_py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/msg/__init__.py
 sena_msgs_generate_messages_py: /home/rizky/sena_ws/devel/lib/python3/dist-packages/sena_msgs/srv/__init__.py
 sena_msgs_generate_messages_py: sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_py.dir/build.make

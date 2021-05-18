@@ -60,8 +60,13 @@ sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_lisp: /home/rizky/sena_ws/
 sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_lisp: /home/rizky/sena_ws/devel/share/common-lisp/ros/sena_msgs/msg/OmniVisionInfo.lisp
 sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_lisp: /home/rizky/sena_ws/devel/share/common-lisp/ros/sena_msgs/msg/PPoint.lisp
 sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_lisp: /home/rizky/sena_ws/devel/share/common-lisp/ros/sena_msgs/msg/VelCmd.lisp
+sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_lisp: /home/rizky/sena_ws/devel/share/common-lisp/ros/sena_msgs/msg/Velocity.lisp
 sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_lisp: /home/rizky/sena_ws/devel/share/common-lisp/ros/sena_msgs/srv/BallHandle.lisp
 sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_lisp: /home/rizky/sena_ws/devel/share/common-lisp/ros/sena_msgs/srv/Shoot.lisp
+sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_lisp: /home/rizky/sena_ws/devel/share/common-lisp/ros/sena_msgs/srv/Floats_array.lisp
+sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_lisp: /home/rizky/sena_ws/devel/share/common-lisp/ros/sena_msgs/srv/KinematicsForward.lisp
+sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_lisp: /home/rizky/sena_ws/devel/share/common-lisp/ros/sena_msgs/srv/KinematicsInverse.lisp
+sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_lisp: /home/rizky/sena_ws/devel/share/common-lisp/ros/sena_msgs/srv/FrameToFrame.lisp
 
 
 /home/rizky/sena_ws/devel/share/common-lisp/ros/sena_msgs/msg/Angle.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
@@ -90,8 +95,8 @@ sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_lisp: /home/rizky/sena_ws/
 
 /home/rizky/sena_ws/devel/share/common-lisp/ros/sena_msgs/msg/OmniVisionInfo.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
 /home/rizky/sena_ws/devel/share/common-lisp/ros/sena_msgs/msg/OmniVisionInfo.lisp: /home/rizky/sena_ws/src/sena/sena_msgs/msg/OmniVisionInfo.msg
-/home/rizky/sena_ws/devel/share/common-lisp/ros/sena_msgs/msg/OmniVisionInfo.lisp: /home/rizky/sena_ws/src/sena/sena_msgs/msg/BallInfo.msg
 /home/rizky/sena_ws/devel/share/common-lisp/ros/sena_msgs/msg/OmniVisionInfo.lisp: /home/rizky/sena_ws/src/sena/sena_msgs/msg/PPoint.msg
+/home/rizky/sena_ws/devel/share/common-lisp/ros/sena_msgs/msg/OmniVisionInfo.lisp: /home/rizky/sena_ws/src/sena/sena_msgs/msg/BallInfo.msg
 /home/rizky/sena_ws/devel/share/common-lisp/ros/sena_msgs/msg/OmniVisionInfo.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/rizky/sena_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Lisp code from sena_msgs/OmniVisionInfo.msg"
 	cd /home/rizky/sena_ws/build/sena/sena_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/rizky/sena_ws/src/sena/sena_msgs/msg/OmniVisionInfo.msg -Isena_msgs:/home/rizky/sena_ws/src/sena/sena_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p sena_msgs -o /home/rizky/sena_ws/devel/share/common-lisp/ros/sena_msgs/msg
@@ -106,15 +111,45 @@ sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_lisp: /home/rizky/sena_ws/
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/rizky/sena_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating Lisp code from sena_msgs/VelCmd.msg"
 	cd /home/rizky/sena_ws/build/sena/sena_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/rizky/sena_ws/src/sena/sena_msgs/msg/VelCmd.msg -Isena_msgs:/home/rizky/sena_ws/src/sena/sena_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p sena_msgs -o /home/rizky/sena_ws/devel/share/common-lisp/ros/sena_msgs/msg
 
+/home/rizky/sena_ws/devel/share/common-lisp/ros/sena_msgs/msg/Velocity.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
+/home/rizky/sena_ws/devel/share/common-lisp/ros/sena_msgs/msg/Velocity.lisp: /home/rizky/sena_ws/src/sena/sena_msgs/msg/Velocity.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/rizky/sena_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating Lisp code from sena_msgs/Velocity.msg"
+	cd /home/rizky/sena_ws/build/sena/sena_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/rizky/sena_ws/src/sena/sena_msgs/msg/Velocity.msg -Isena_msgs:/home/rizky/sena_ws/src/sena/sena_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p sena_msgs -o /home/rizky/sena_ws/devel/share/common-lisp/ros/sena_msgs/msg
+
 /home/rizky/sena_ws/devel/share/common-lisp/ros/sena_msgs/srv/BallHandle.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
 /home/rizky/sena_ws/devel/share/common-lisp/ros/sena_msgs/srv/BallHandle.lisp: /home/rizky/sena_ws/src/sena/sena_msgs/srv/BallHandle.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/rizky/sena_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating Lisp code from sena_msgs/BallHandle.srv"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/rizky/sena_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating Lisp code from sena_msgs/BallHandle.srv"
 	cd /home/rizky/sena_ws/build/sena/sena_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/rizky/sena_ws/src/sena/sena_msgs/srv/BallHandle.srv -Isena_msgs:/home/rizky/sena_ws/src/sena/sena_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p sena_msgs -o /home/rizky/sena_ws/devel/share/common-lisp/ros/sena_msgs/srv
 
 /home/rizky/sena_ws/devel/share/common-lisp/ros/sena_msgs/srv/Shoot.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
 /home/rizky/sena_ws/devel/share/common-lisp/ros/sena_msgs/srv/Shoot.lisp: /home/rizky/sena_ws/src/sena/sena_msgs/srv/Shoot.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/rizky/sena_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating Lisp code from sena_msgs/Shoot.srv"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/rizky/sena_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating Lisp code from sena_msgs/Shoot.srv"
 	cd /home/rizky/sena_ws/build/sena/sena_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/rizky/sena_ws/src/sena/sena_msgs/srv/Shoot.srv -Isena_msgs:/home/rizky/sena_ws/src/sena/sena_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p sena_msgs -o /home/rizky/sena_ws/devel/share/common-lisp/ros/sena_msgs/srv
+
+/home/rizky/sena_ws/devel/share/common-lisp/ros/sena_msgs/srv/Floats_array.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
+/home/rizky/sena_ws/devel/share/common-lisp/ros/sena_msgs/srv/Floats_array.lisp: /home/rizky/sena_ws/src/sena/sena_msgs/srv/Floats_array.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/rizky/sena_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating Lisp code from sena_msgs/Floats_array.srv"
+	cd /home/rizky/sena_ws/build/sena/sena_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/rizky/sena_ws/src/sena/sena_msgs/srv/Floats_array.srv -Isena_msgs:/home/rizky/sena_ws/src/sena/sena_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p sena_msgs -o /home/rizky/sena_ws/devel/share/common-lisp/ros/sena_msgs/srv
+
+/home/rizky/sena_ws/devel/share/common-lisp/ros/sena_msgs/srv/KinematicsForward.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
+/home/rizky/sena_ws/devel/share/common-lisp/ros/sena_msgs/srv/KinematicsForward.lisp: /home/rizky/sena_ws/src/sena/sena_msgs/srv/KinematicsForward.srv
+/home/rizky/sena_ws/devel/share/common-lisp/ros/sena_msgs/srv/KinematicsForward.lisp: /home/rizky/sena_ws/src/sena/sena_msgs/msg/Velocity.msg
+/home/rizky/sena_ws/devel/share/common-lisp/ros/sena_msgs/srv/KinematicsForward.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Pose2D.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/rizky/sena_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Generating Lisp code from sena_msgs/KinematicsForward.srv"
+	cd /home/rizky/sena_ws/build/sena/sena_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/rizky/sena_ws/src/sena/sena_msgs/srv/KinematicsForward.srv -Isena_msgs:/home/rizky/sena_ws/src/sena/sena_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p sena_msgs -o /home/rizky/sena_ws/devel/share/common-lisp/ros/sena_msgs/srv
+
+/home/rizky/sena_ws/devel/share/common-lisp/ros/sena_msgs/srv/KinematicsInverse.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
+/home/rizky/sena_ws/devel/share/common-lisp/ros/sena_msgs/srv/KinematicsInverse.lisp: /home/rizky/sena_ws/src/sena/sena_msgs/srv/KinematicsInverse.srv
+/home/rizky/sena_ws/devel/share/common-lisp/ros/sena_msgs/srv/KinematicsInverse.lisp: /home/rizky/sena_ws/src/sena/sena_msgs/msg/Velocity.msg
+/home/rizky/sena_ws/devel/share/common-lisp/ros/sena_msgs/srv/KinematicsInverse.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Pose2D.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/rizky/sena_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Generating Lisp code from sena_msgs/KinematicsInverse.srv"
+	cd /home/rizky/sena_ws/build/sena/sena_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/rizky/sena_ws/src/sena/sena_msgs/srv/KinematicsInverse.srv -Isena_msgs:/home/rizky/sena_ws/src/sena/sena_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p sena_msgs -o /home/rizky/sena_ws/devel/share/common-lisp/ros/sena_msgs/srv
+
+/home/rizky/sena_ws/devel/share/common-lisp/ros/sena_msgs/srv/FrameToFrame.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
+/home/rizky/sena_ws/devel/share/common-lisp/ros/sena_msgs/srv/FrameToFrame.lisp: /home/rizky/sena_ws/src/sena/sena_msgs/srv/FrameToFrame.srv
+/home/rizky/sena_ws/devel/share/common-lisp/ros/sena_msgs/srv/FrameToFrame.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Pose2D.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/rizky/sena_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Generating Lisp code from sena_msgs/FrameToFrame.srv"
+	cd /home/rizky/sena_ws/build/sena/sena_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/rizky/sena_ws/src/sena/sena_msgs/srv/FrameToFrame.srv -Isena_msgs:/home/rizky/sena_ws/src/sena/sena_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p sena_msgs -o /home/rizky/sena_ws/devel/share/common-lisp/ros/sena_msgs/srv
 
 sena_msgs_generate_messages_lisp: sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_lisp
 sena_msgs_generate_messages_lisp: /home/rizky/sena_ws/devel/share/common-lisp/ros/sena_msgs/msg/Angle.lisp
@@ -124,8 +159,13 @@ sena_msgs_generate_messages_lisp: /home/rizky/sena_ws/devel/share/common-lisp/ro
 sena_msgs_generate_messages_lisp: /home/rizky/sena_ws/devel/share/common-lisp/ros/sena_msgs/msg/OmniVisionInfo.lisp
 sena_msgs_generate_messages_lisp: /home/rizky/sena_ws/devel/share/common-lisp/ros/sena_msgs/msg/PPoint.lisp
 sena_msgs_generate_messages_lisp: /home/rizky/sena_ws/devel/share/common-lisp/ros/sena_msgs/msg/VelCmd.lisp
+sena_msgs_generate_messages_lisp: /home/rizky/sena_ws/devel/share/common-lisp/ros/sena_msgs/msg/Velocity.lisp
 sena_msgs_generate_messages_lisp: /home/rizky/sena_ws/devel/share/common-lisp/ros/sena_msgs/srv/BallHandle.lisp
 sena_msgs_generate_messages_lisp: /home/rizky/sena_ws/devel/share/common-lisp/ros/sena_msgs/srv/Shoot.lisp
+sena_msgs_generate_messages_lisp: /home/rizky/sena_ws/devel/share/common-lisp/ros/sena_msgs/srv/Floats_array.lisp
+sena_msgs_generate_messages_lisp: /home/rizky/sena_ws/devel/share/common-lisp/ros/sena_msgs/srv/KinematicsForward.lisp
+sena_msgs_generate_messages_lisp: /home/rizky/sena_ws/devel/share/common-lisp/ros/sena_msgs/srv/KinematicsInverse.lisp
+sena_msgs_generate_messages_lisp: /home/rizky/sena_ws/devel/share/common-lisp/ros/sena_msgs/srv/FrameToFrame.lisp
 sena_msgs_generate_messages_lisp: sena/sena_msgs/CMakeFiles/sena_msgs_generate_messages_lisp.dir/build.make
 
 .PHONY : sena_msgs_generate_messages_lisp
