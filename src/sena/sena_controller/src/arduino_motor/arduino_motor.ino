@@ -3,22 +3,29 @@
 #include <rospy_tutorials/Floats.h>
 
 //MOTOR1
-#define RPWM1 4
-#define LPWM1 5
+#define RPWM1 11
+#define LPWM1 10
+
+//MOTOR2
+#define RPWM2 9
+#define LPWM2 6
+
+//MOTOR3
+#define RPWM3 5
+#define LPWM3 3
 
 float Vm_x, Vm_y, Vm_z;
 float V1, V2, V3;
 
 ros::NodeHandle nh;
-rospy_tutorials::Floats joint_state;
 
-void motorCb(const geometry_msgs::Twist& msg){
+void motor1_Cb(const geometry_msgs::Twist& msg){
   Vm_x = msg.linear.x;
   Vm_y = msg.linear.y;
-  Vm_z = msg.linear.z;
+  Vm_z = msg.angular.z;
 
   V1 = (-Vm_x / 2) - (sqrt(3)*Vm_y/2) + Vm_z;
-  
+
   if (V1 >= 0){
     analogWrite(RPWM1, V1);
     analogWrite(LPWM1, 0);
@@ -30,23 +37,60 @@ void motorCb(const geometry_msgs::Twist& msg){
   
 }
 
-ros::Subscriber<geometry_msgs::Twist> sub("/cmd_vel", &motorCb);
-ros::Publisher pub("/joint_from_arduino", &joint_state);
-void setup() {
+void motor2_Cb(const geometry_msgs::Twist& msg){
+  Vm_x = msg.linear.x;
+  Vm_y = msg.linear.y;
+  Vm_z = msg.angular.z;
 
+  V2 = Vm_x + Vm_z;
+  
+  if (V2 >= 0){
+    analogWrite(RPWM2, V2);
+    analogWrite(LPWM2, 0);
+  }
+  else {
+    analogWrite(RPWM2, 0);
+    analogWrite(LPWM2, -V2);
+  }
+  
+}
+
+void motor3_Cb(const geometry_msgs::Twist& msg){
+  Vm_x = msg.linear.x;
+  Vm_y = msg.linear.y;
+  Vm_z = msg.angular.z;
+
+  V3 = (-Vm_x/2) + (sqrt(3) * Vm_y/2) + Vm_z;
+  
+  if (V3 >= 0){
+    analogWrite(RPWM3, V3);
+    analogWrite(LPWM3, 0);
+  }
+  else {
+    analogWrite(RPWM3, 0);
+    analogWrite(LPWM3, -V3);
+  }
+}
+
+ros::Subscriber<geometry_msgs::Twist> sub1("/sena/left_joint_velocity_controller/command", &motor1_Cb);
+ros::Subscriber<geometry_msgs::Twist> sub2("/sena/back_joint_velocity_controller/command", &motor2_Cb);
+ros::Subscriber<geometry_msgs::Twist> sub3("/sena/right_joint_velocity_controller/command", &motor3_Cb);
+
+void setup() {
   pinMode (RPWM1, OUTPUT);
   pinMode (LPWM1, OUTPUT);
+  pinMode (RPWM2, OUTPUT);
+  pinMode (LPWM2, OUTPUT);
+  pinMode (RPWM3, OUTPUT);
+  pinMode (LPWM3, OUTPUT);
+  
   nh.initNode();
-  nh.subscribe(sub);
-  nh.advertise(pub);
+  nh.subscribe(sub1);
+  nh.subscribe(sub2);
+  nh.subscribe(sub3);
 }
 
 void loop() {
-  if (V1 > 0){
-    joint_state.data_length = 1;
-    joint_state.data[0] = V1;
-    pub.publish(&joint_state);
-  }
   nh.spinOnce();
   delay(1);
 }

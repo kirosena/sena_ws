@@ -1,6 +1,5 @@
 #include <cmath>
 #include <string>
-
 #include <ros/ros.h>
 #include <geometry_msgs/Pose2D.h>
 #include <sensor_msgs/JointState.h>
