@@ -7,4 +7,9 @@
 # new environment variables
 
 # modified environment variables
+export CMAKE_PREFIX_PATH="/home/rizky/sena_ws/devel:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/rizky/sena_ws/devel/lib:$LD_LIBRARY_PATH"
+export PKG_CONFIG_PATH="/home/rizky/sena_ws/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/home/rizky/sena_ws/build'
+export PYTHONPATH="/home/rizky/sena_ws/devel/lib/python3/dist-packages:$PYTHONPATH"
+export ROS_PACKAGE_PATH="/home/rizky/sena_ws/src:$ROS_PACKAGE_PATH"

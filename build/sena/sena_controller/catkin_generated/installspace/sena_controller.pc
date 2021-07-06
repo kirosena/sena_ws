@@ -5,4 +5,4 @@ Description: Description of sena_controller
 Version: 0.0.0
 Cflags: 
 Libs: -L${prefix}/lib -lsena_controller
-Requires: roscpp rospy std_msgs sena_msgs sensor_msgs
+Requires: roscpp rospy std_msgs sena_msgs sensor_msgs geometry_msgs

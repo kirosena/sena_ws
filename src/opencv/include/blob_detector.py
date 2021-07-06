@@ -192,8 +192,8 @@ def get_blob_relative_position(image, keyPoint):
 if __name__=="__main__":
 
     #--- Define HSV limits
-    blue_min = (0, 153, 130) #-- orange ball
-    blue_max = (26, 255, 255) 
+    blue_min = (0, 100, 0) #-- orange ball
+    blue_max = (255, 255, 255) 
     
     #--- Define area limit [x_min, y_min, x_max, y_max] adimensional (0.0 to 1.0) starting from top left corner
     window = [0.25, 0.25, 0.65, 0.75]
@@ -224,7 +224,7 @@ if __name__=="__main__":
     else:
         #-- Read image list from file:
         image_list = []
-        image_list.append(cv2.imread("blob.jpeg"))
+        image_list.append(cv2.imread("ball.jpeg"))
         #image_list.append(cv2.imread("blob2.jpg"))
         #image_list.append(cv2.imread("blob3.jpg"))
 

@@ -183,79 +183,19 @@ odometry/fast:
 .PHONY : odometry/fast
 
 # Convenience name for target.
-sena/sena_controller/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule:
-	cd /home/rizky/sena_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sena/sena_controller/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
-.PHONY : sena/sena_controller/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+sena/sena_controller/CMakeFiles/sena_controller_generate_messages.dir/rule:
+	cd /home/rizky/sena_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sena/sena_controller/CMakeFiles/sena_controller_generate_messages.dir/rule
+.PHONY : sena/sena_controller/CMakeFiles/sena_controller_generate_messages.dir/rule
 
 # Convenience name for target.
-sensor_msgs_generate_messages_py: sena/sena_controller/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+sena_controller_generate_messages: sena/sena_controller/CMakeFiles/sena_controller_generate_messages.dir/rule
 
-.PHONY : sensor_msgs_generate_messages_py
+.PHONY : sena_controller_generate_messages
 
 # fast build rule for target.
-sensor_msgs_generate_messages_py/fast:
-	cd /home/rizky/sena_ws/build && $(MAKE) -f sena/sena_controller/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make sena/sena_controller/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
-.PHONY : sensor_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-sena/sena_controller/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/rizky/sena_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sena/sena_controller/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
-.PHONY : sena/sena_controller/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_nodejs: sena/sena_controller/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : sensor_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-sensor_msgs_generate_messages_nodejs/fast:
-	cd /home/rizky/sena_ws/build && $(MAKE) -f sena/sena_controller/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make sena/sena_controller/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
-.PHONY : sensor_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-sena/sena_controller/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule:
-	cd /home/rizky/sena_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sena/sena_controller/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
-.PHONY : sena/sena_controller/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_lisp: sena/sena_controller/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : sensor_msgs_generate_messages_lisp
-
-# fast build rule for target.
-sensor_msgs_generate_messages_lisp/fast:
-	cd /home/rizky/sena_ws/build && $(MAKE) -f sena/sena_controller/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make sena/sena_controller/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
-.PHONY : sensor_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-sena/sena_controller/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule:
-	cd /home/rizky/sena_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sena/sena_controller/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
-.PHONY : sena/sena_controller/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_eus: sena/sena_controller/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
-
-.PHONY : sensor_msgs_generate_messages_eus
-
-# fast build rule for target.
-sensor_msgs_generate_messages_eus/fast:
-	cd /home/rizky/sena_ws/build && $(MAKE) -f sena/sena_controller/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make sena/sena_controller/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
-.PHONY : sensor_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-sena/sena_controller/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule:
-	cd /home/rizky/sena_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sena/sena_controller/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
-.PHONY : sena/sena_controller/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_cpp: sena/sena_controller/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : sensor_msgs_generate_messages_cpp
-
-# fast build rule for target.
-sensor_msgs_generate_messages_cpp/fast:
-	cd /home/rizky/sena_ws/build && $(MAKE) -f sena/sena_controller/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make sena/sena_controller/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
-.PHONY : sensor_msgs_generate_messages_cpp/fast
+sena_controller_generate_messages/fast:
+	cd /home/rizky/sena_ws/build && $(MAKE) -f sena/sena_controller/CMakeFiles/sena_controller_generate_messages.dir/build.make sena/sena_controller/CMakeFiles/sena_controller_generate_messages.dir/build
+.PHONY : sena_controller_generate_messages/fast
 
 src/odom.o: src/odom.cpp.o
 
@@ -298,11 +238,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... test"
 	@echo "... odometry"
-	@echo "... sensor_msgs_generate_messages_py"
-	@echo "... sensor_msgs_generate_messages_nodejs"
-	@echo "... sensor_msgs_generate_messages_lisp"
-	@echo "... sensor_msgs_generate_messages_eus"
-	@echo "... sensor_msgs_generate_messages_cpp"
+	@echo "... sena_controller_generate_messages"
 	@echo "... src/odom.o"
 	@echo "... src/odom.i"
 	@echo "... src/odom.s"

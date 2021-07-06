@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/rizky/sena_ws/build
 include sena/sena_msgs/CMakeFiles/_sena_msgs_generate_messages_check_deps_KinematicsForward.dir/progress.make
 
 sena/sena_msgs/CMakeFiles/_sena_msgs_generate_messages_check_deps_KinematicsForward:
-	cd /home/rizky/sena_ws/build/sena/sena_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py sena_msgs /home/rizky/sena_ws/src/sena/sena_msgs/srv/KinematicsForward.srv sena_msgs/Velocity:geometry_msgs/Pose2D
+	cd /home/rizky/sena_ws/build/sena/sena_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py sena_msgs /home/rizky/sena_ws/src/sena/sena_msgs/srv/KinematicsForward.srv geometry_msgs/Pose2D:sena_msgs/Velocity
 
 _sena_msgs_generate_messages_check_deps_KinematicsForward: sena/sena_msgs/CMakeFiles/_sena_msgs_generate_messages_check_deps_KinematicsForward
 _sena_msgs_generate_messages_check_deps_KinematicsForward: sena/sena_msgs/CMakeFiles/_sena_msgs_generate_messages_check_deps_KinematicsForward.dir/build.make

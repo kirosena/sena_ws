@@ -7,14 +7,15 @@ find_package(catkin REQUIRED COMPONENTS
   std_msgs
   sena_msgs
   sensor_msgs
+  geometry_msgs
 )
 
 ## Generate added messages and services with any dependencies listed here
-# generate_messages(
-#   DEPENDENCIES
-#   std_msgs
-#   geometry_msgs
-# )
+generate_messages(
+  DEPENDENCIES
+  std_msgs
+  geometry_msgs
+)
 
 catkin_package(
 #  INCLUDE_DIRS include
@@ -25,6 +26,7 @@ catkin_package(
     std_msgs
     sena_msgs
     sensor_msgs
+    geometry_msgs
  # DEPENDS system_lib
 )
 
@@ -77,6 +79,7 @@ catkin_install_python(PROGRAMS
   scripts/teleop_twist_keyboard.py
   scripts/motorsub.py
   scripts/recieve_from_arduino.py
+  scripts/chase_the_ball.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
